@@ -1,2 +1,9 @@
-# ALG101-too-weak-to-leetcode
-The course materials for ALG101: Too weak to leetcode
+# [ALG101] 先別急著寫 leetcode
+
+這個 repo 會放與課程相關的資源，包含大綱、作業以及參考解答程式碼  
+完整課程可以在這邊找到：（待補）
+
+## Changelog
+
+### 2020-01-09
+建立 repo
