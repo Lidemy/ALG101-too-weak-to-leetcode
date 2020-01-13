@@ -25,5 +25,9 @@
 
 ## Unit3.4：Project3 介紹
 
-給三個題目（待補：要在 lidemy oj 上面出題），用白話文改寫  
-並且提出在解題中有可能碰到的問題
+給三個題目，用白話文改寫  
+並且提出在解題中有可能碰到的問題或是需要特別注意的地方
+
+1. [LIOJ 1010：靈魂伴侶](https://oj.lidemy.com/problem/1010)
+2. [LIOJ 1015：音速小子](https://oj.lidemy.com/problem/1015)
+3. [LIOJ 1017：貪婪的小偷](https://oj.lidemy.com/problem/1017)
