@@ -1,18 +1,24 @@
-# Unit3 範例
+# Unit4 範例
 
-## Project3
+## JavaScript
 
-### 1. LIOJ 1010：靈魂伴侶
+1. [Unit4.2：函式填空法](prime.js)
+2. [Unit4.3：簡化法](stars.js)
+3. [Unit4.5：實戰：印出金字塔](pyramid.js)
+4. [Unit4.6：實戰：九九乘法表](nine-nine.js)
+5. [Unit4.7：實戰：印出 1-100 的平方數](square.js)
 
-題目連結：[LIOJ 1010：靈魂伴侶](https://oj.lidemy.com/problem/1010)
-TODO: 需注意事項：待補
 
-### 2. LIOJ 1015：音速小子
+## Project4
 
-題目連結：[LIOJ 1015：音速小子](https://oj.lidemy.com/problem/1015)
-TODO: 需注意事項：待補
+### 1. LIOJ 1023：印出聖誕樹
 
-### 3. LIOJ 1017：貪婪的小偷
+題目連結：[LIOJ 1023：印出聖誕樹](https://oj.lidemy.com/problem/1023)
 
-題目連結：[LIOJ 1017：貪婪的小偷](https://oj.lidemy.com/problem/1017)
-TODO: 需注意事項：待補
+### 2. LIOJ 1024：NN 乘法表
+
+題目連結：[LIOJ 1024：NN 乘法表](https://oj.lidemy.com/problem/1024)
+
+### 3. LIOJ 1025：水仙花數
+
+題目連結：[LIOJ 1025：水仙花數](https://oj.lidemy.com/problem/1025)
