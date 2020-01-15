@@ -6,12 +6,12 @@
 但本質上他們是一樣的，你用內建函式可以做到的功能，for 迴圈搭配 if else 幾乎都做得到  
 因此，這一個單元要來實作這些內建函式，當你能夠實作出他們以後，之後就放心地用吧！
 
+## Unit6.1：練習實作內建函式
+## Unit6.2：實戰：Array.map
+## Unit6.3：實戰：String.repeat
+## Unit6.4：實戰：Array.lastIndexOf
 
-## Unit6.1：實戰：Array.map
-## Unit6.2：實戰：String.repeat
-## Unit6.3：實戰：Array.lastIndexOf
-
-## Unit6.4：Project6 介紹
+## Unit6.5：Project6 介紹
 
 Project6 會實作一些常見的內建函式的功能：
 

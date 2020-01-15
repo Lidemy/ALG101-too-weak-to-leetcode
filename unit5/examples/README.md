@@ -2,9 +2,9 @@
 
 ## JavaScript
 
-1. [Unit5.1：實戰：判斷等差數列](arr.js)
-2. [Unit5.2：實戰：身分證驗證](id.js)
-3. [Unit5.3：實戰：數字位數加總](sum.js)
+1. [Unit5.2：實戰：判斷等差數列](arr.js)
+2. [Unit5.3：實戰：身分證驗證](id.js)
+3. [Unit5.4：實戰：數字位數加總](sum.js)
 
 ## Project5
 

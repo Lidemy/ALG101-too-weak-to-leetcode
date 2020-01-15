@@ -2,9 +2,9 @@
 
 ## JavaScript
 
-1. [Unit6.1：實戰：Array.map](map.js)
-2. [Unit6.2：實戰：String.repeat](repeat.js)
-3. [Unit6.3：實戰：Array.lastIndexOf](lastIndexOf.js)
+1. [Unit6.2：實戰：Array.map](map.js)
+2. [Unit6.3：實戰：String.repeat](repeat.js)
+3. [Unit6.4：實戰：Array.lastIndexOf](lastIndexOf.js)
 
 ## Project6
 
