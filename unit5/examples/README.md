@@ -44,7 +44,7 @@
 
 題目連結：[LIOJ 1034：凱薩加密](https://oj.lidemy.com/problem/1034)
 
-### 10. LIOJ 1035：簡易排序
+### 10. LIOJ 1046：圈圈叉叉
 
-題目連結：[LIOJ 1035：簡易排序](https://oj.lidemy.com/problem/1035)
+題目連結：[LIOJ 1046：簡易排序](https://oj.lidemy.com/problem/1046)
 

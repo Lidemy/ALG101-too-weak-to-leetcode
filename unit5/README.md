@@ -26,4 +26,4 @@ Project5 會有十題簡單題目，規則跟上面一樣，禁止使用內建 f
 7. [LIOJ 1032：平面距離計算](https://oj.lidemy.com/problem/1032)
 8. [LIOJ 1033：最近點對](https://oj.lidemy.com/problem/1033)
 9. [LIOJ 1034：凱薩加密](https://oj.lidemy.com/problem/1034)
-10. [LIOJ 1035：簡易排序](https://oj.lidemy.com/problem/1035)
+10. [LIOJ 1046：圈圈叉叉](https://oj.lidemy.com/problem/1046)
