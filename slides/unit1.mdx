@@ -1,0 +1,756 @@
+import Lidemy from './theme'
+import { CodeSurfer, Step, CodeSurferColumns } from "code-surfer"
+import { nightOwl } from "@code-surfer/themes"
+import Layout from './Layout'
+
+export const themes = [ Lidemy ]
+
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit1：要學好程式，從不要寫程式開始
+
+</Layout>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit1.1：What the funk，都說了先不要
+
+</Layout>
+
+---
+
+# 寫程式 ≠ 寫程式碼
+
+---
+
+# 初學者寫程式
+
+1. 邊寫程式碼邊想怎麼解
+2. 試著套用自己以前學過的語法
+
+---
+
+# 會寫程式的人寫程式
+
+1. 先想解法，在腦中構思（只是太快你看不出來）
+2. 把解法轉換成程式碼
+
+---
+
+# 解題分成兩種
+
+---
+
+# 第一種：用想的就知道解得開
+
+---
+
+# 第一種：用想的就知道解得開
+
+1. 雖然解得開但很慢
+
+---
+
+# 第一種：用想的就知道解得開
+
+1. 雖然解得開但很慢
+2. 解開而且效率不錯
+
+---
+
+# 第一種：用想的就知道解得開
+
+1. 雖然解得開但很慢
+2. 解開而且效率不錯
+3. 解不開，因為沒辦法把想法轉換成程式碼
+
+---
+
+# 第二種：光想就想不出來怎麼解
+
+---
+
+# 最常見的狀況
+
+用想的大概知道答案，卻不知道怎麼用程式碼表達
+
+---
+
+# 初學者寫程式
+
+1. 邊寫程式碼邊想怎麼解
+2. 試著套用自己以前學過的語法
+
+---
+
+# 初學者寫程式：推薦方法
+
+1. 大概想一下解法，不寫任何程式碼
+2. 把解法寫成 pseudo code
+3. 把 pseudo code 翻譯成程式碼
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit1.2：時間一天一天一天的走，程式碼一行一行一行的跑
+
+</Layout>
+
+---
+
+# 寫出一行行的可執行步驟
+
+1. 一行只做一件事
+2. 善用跳轉（jump）
+
+---
+
+# 範例：印出 1~100 之間的偶數
+
+---
+
+# 思考時間
+
+1. 如何印出 1~100？
+2. 如何判斷某個數是偶數？
+
+---
+
+<CodeSurfer>
+
+```js
+1. 令 i 為 1
+2. 如果 i>100，結束
+3. 印出 i
+4. i = i+1
+5. 跳回第 2 行
+```
+
+```js 1 subtitle="設置初始條件"
+1. 令 i 為 1
+2. 如果 i>100，結束
+3. 印出 i
+4. i = i+1
+5. 跳回第 2 行
+```
+
+```js 2 subtitle="判斷是否該結束程式"
+1. 令 i 為 1
+2. 如果 i>100，結束
+3. 印出 i
+4. i = i+1
+5. 跳回第 2 行
+```
+
+```js 3 subtitle="做事情"
+1. 令 i 為 1
+2. 如果 i>100，結束
+3. 印出 i
+4. i = i+1
+5. 跳回第 2 行
+```
+
+```js 4 subtitle="把 i 加 1"
+1. 令 i 為 1
+2. 如果 i>100，結束
+3. 印出 i
+4. i = i+1
+5. 跳回第 2 行
+```
+
+```js 5 subtitle="重複動作"
+1. 令 i 為 1
+2. 如果 i>100，結束
+3. 印出 i
+4. i = i+1
+5. 跳回第 2 行
+```
+
+```js
+1. 令 i 為 1
+2. 如果 i>100，結束
+3. 印出 i
+4. i = i+1
+5. 跳回第 2 行
+```
+
+```js 3 subtitle="要判斷的地方"
+1. 令 i 為 1
+2. 如果 i>100，結束
+3. 印出 i
+4. i = i+1
+5. 跳回第 2 行
+```
+
+```js 3 subtitle="判斷偶數"
+1. 令 i 為 1
+2. 如果 i>100，結束
+3. 如果 i 是偶數，印出 i
+4. i = i+1
+5. 跳回第 2 行
+```
+
+```js 3 subtitle="利用是否能整除 2 來判斷奇偶"
+1. 令 i 為 1
+2. 如果 i>100，結束
+3. 如果 i % 2 === 0，印出 i
+4. i = i+1
+5. 跳回第 2 行
+```
+
+```js
+1. 令 i 為 1
+2. 如果 i>100，結束
+3. 如果 i % 2 === 0，印出 i
+4. i = i+1
+5. 跳回第 2 行
+```
+
+```js title="另一種解法"
+1. 令 i 為 2
+2. 如果 i>100，結束
+3. 印出 i
+4. i = i+2
+5. 跳回第 2 行
+```
+
+</CodeSurfer>
+
+---
+
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit1.3：如何撰寫 pseudo code？
+
+</Layout>
+
+---
+
+# Pseudo Code 是什麼？
+
+---
+
+```js
+1. 令 i 為 1
+2. 如果 i>100，結束
+3. 印出 i
+4. i = i+1
+5. 跳回第 2 行
+```
+
+---
+
+<CodeSurferColumns>
+
+<Step subtitle="一步步的虛擬碼">
+
+```markup
+1. 令 i 為 1
+2. 如果 i>100，結束
+3. 印出 i
+4. i = i+1
+5. 跳回第 2 行
+```
+
+```markup
+1. let i = 1
+2. if i>100 then exit
+3. print i
+4. i = i+1
+5. jump to line 2
+```
+
+</Step>
+
+<Step subtitle="更像程式碼的虛擬碼">
+
+```markup
+1. 令 i 為 1
+2. 如果 i>100，結束
+3. 印出 i
+4. i = i+1
+5. 跳回第 2 行
+```
+
+```markup
+1. for (i from 1 to 100) do
+2.   print i
+3. end for
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit1.4：實戰練習：印出 1-100 的奇數
+
+</Layout>
+
+---
+
+<CodeSurfer>
+
+```markup
+for (i from 1 to 100) do
+  if (n mod 2 === 1) then
+    print i
+  end if
+end for
+```
+
+```markup 2:4 subtitle="這叫一個區塊"
+for (i from 1 to 100) do
+  if (n mod 2 === 1) then
+    print i
+  end if
+end for
+```
+
+```markup 1,5 subtitle="這也叫一個區塊"
+for (i from 1 to 100) do
+  if (n mod 2 === 1) then
+    print i
+  end if
+end for
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns>
+
+<Step subtitle="縮排的重要性">
+
+```markup
+for (i from 1 to 100) do
+  if (n mod 2 === 1) then
+    print i
+  end if
+end for
+```
+
+```markup
+for (i from 1 to 100) do
+if (n mod 2 === 1) then
+print i
+end if
+end for
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit1.5：實戰練習：fizz buzz
+
+</Layout>
+
+---
+
+給一個數字 n  
+印出 1~n  
+但如果碰到 3 的倍數，改印 Fizz  
+碰到 5 的倍數，改印 Buzz  
+若同時是 3 跟 5 的倍數，印 FizzBuzz  
+
+---
+
+### 範例：n = 7
+
+1  
+2  
+Fizz  
+4  
+Buzz  
+6  
+7  
+
+---
+
+<CodeSurfer>
+
+```markup subtitle="先來一個 1~n 的迴圈"
+for (i from 1 to n) do
+  
+end for
+```
+
+```markup subtitle="先判斷是否能被 15 整除"
+for (i from 1 to n) do
+  if (i % 15 === 0) print "FizzBuzz"
+end for
+```
+
+```markup subtitle="再判斷是否能被 3 整除"
+for (i from 1 to n) do
+  if (i % 15 === 0) print "FizzBuzz"
+  else if (i % 3 === 0) print "Fizz"
+end for
+```
+
+```markup subtitle="最後判斷 5"
+for (i from 1 to n) do
+  if (i % 15 === 0) print "FizzBuzz"
+  else if (i % 3 === 0) print "Fizz"
+  else if (i % 5 === 0) print "Buzz"
+end for
+```
+
+```markup subtitle="打完收工"
+for (i from 1 to n) do
+  if (i % 15 === 0) print "FizzBuzz"
+  else if (i % 3 === 0) print "Fizz"
+  else if (i % 5 === 0) print "Buzz"
+end for
+```
+
+</CodeSurfer>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit1.6：實戰練習：找最小值
+
+</Layout>
+
+---
+
+假設今天你有一副撲克牌  
+一次只能看一張牌  
+你會怎麼找到最小的牌？
+
+---
+
+<CodeSurfer>
+
+``` markup subtitle="這張牌是目前最小的，放旁邊"
+翻開第一張牌，♠️8
+```
+
+``` markup subtitle="比♠️8大，不理它"
+翻開第一張牌，♠️8
+翻開第二張牌，❤️J
+```
+
+``` markup subtitle="比♠️8大，不理它"
+翻開第一張牌，♠️8
+翻開第二張牌，❤️J
+翻開第三張牌，❤️A
+```
+
+``` markup subtitle="比♠️8小，放旁邊當最小值"
+翻開第一張牌，♠️8
+翻開第二張牌，❤️J
+翻開第三張牌，❤️A
+翻開第四張牌，❤️3
+```
+
+``` markup subtitle="比❤️3大，不理它"
+翻開第一張牌，♠️8
+翻開第二張牌，❤️J
+翻開第三張牌，❤️A
+翻開第四張牌，❤️3
+翻開第五張牌，♠️7
+```
+
+``` markup subtitle="找到最小值：❤️3"
+翻開第一張牌，♠️8
+翻開第二張牌，❤️J
+翻開第三張牌，❤️A
+翻開第四張牌，❤️3
+翻開第五張牌，♠️7
+沒牌了
+```
+
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```markup
+let 最小的牌 = 第一張牌
+for (i from 1 to n) do
+  翻開第 i 張牌
+  if (第 i 張牌比最小牌的還小) do
+    最小的牌 = 第 i 張牌
+  end if
+end for
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns>
+
+<Step subtitle="從撲克牌變成陣列">
+
+```markup
+let 最小的牌 = 第一張牌
+for (i from 1 to n) do
+  翻開第 i 張牌
+  if (第 i 張牌比最小牌的還小) do
+    最小的牌 = 第 i 張牌
+  end if
+end for
+```
+
+```markup
+let min = arr[0]
+for (i from 0 to n-1) do
+  if (arr[i] < min) do
+    min = arr[i]
+  end if
+end for
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit1.7：Project1 介紹
+
+</Layout>
+
+---
+
+# Project1
+
+1. 字串反轉
+2. 陣列總和
+3. 找最大值
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Project1：字串反轉
+
+</Layout>
+
+---
+
+先想著如何把字串一個字一個字印出來  
+PS. 可以用 str[i] 取得第 i 個字
+
+---
+
+<CodeSurfer>
+
+```markup subtitle="先來一個 0~n-1 的迴圈"
+for (i from 0 to n-1) do
+  
+end for
+```
+
+```markup subtitle="再印出每一個字"
+for (i from 0 to n-1) do
+  print str[i]
+end for
+```
+
+```markup subtitle="接著把事情反過來做！"
+for (i from 0 to n-1) do
+  print str[i]
+end for
+```
+
+```markup 1:3 subtitle="就可以印出倒過來的字串"
+for (i from n-1 to 0) do
+  print str[i]
+end for
+```
+
+```markup subtitle="再來不要印字串，而是存起來"
+for (i from n-1 to 0) do
+  print str[i]
+end for
+```
+
+```markup subtitle="先準備一個字串儲存結果"
+let s = ''
+for (i from n-1 to 0) do
+  print str[i]
+end for
+```
+
+```markup subtitle="再把每一個字都加到 s 上面"
+let s = ''
+for (i from n-1 to 0) do
+  s += str[i]
+end for
+```
+
+```markup subtitle="最後印出，大功告成"
+let s = ''
+for (i from n-1 to 0) do
+  s += str[i]
+end for
+print s
+```
+
+```markup subtitle="最後印出，大功告成"
+let s = ''
+for (i from n-1 to 0) do
+  s += str[i]
+end for
+print s
+```
+
+</CodeSurfer>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Project2：陣列總和
+
+</Layout>
+
+---
+
+## 結構跟反轉字串極為類似
+
+---
+
+<CodeSurfer>
+
+```markup subtitle="先來一個 0~n-1 的迴圈"
+for (i from 0 to n-1) do
+  
+end for
+```
+
+```markup subtitle="準備好儲存總和的變數"
+let sum = 0
+for (i from 0 to n-1) do
+  
+end for
+```
+
+```markup subtitle="再把每一個元素都加到 sum 上面"
+let sum = 0
+for (i from 0 to n-1) do
+  sum += arr[i]
+end for
+```
+
+```markup subtitle="最後印出，大功告成"
+let sum = 0
+for (i from 0 to n-1) do
+  sum += arr[i]
+end for
+print sum
+```
+
+```markup subtitle="最後印出，大功告成"
+let sum = 0
+for (i from 0 to n-1) do
+  sum += arr[i]
+end for
+print sum
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns>
+
+<Step>
+
+```markup subtitle="反轉字串"
+let s = ''
+for (i from n-1 to 0) do
+  s += str[i]
+end for
+print s
+```
+
+```markup subtitle="陣列總和"
+let sum = 0
+for (i from 0 to n-1) do
+  sum += arr[i]
+end for
+print sum
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Project3：找最大值
+
+</Layout>
+
+---
+
+## 跟找最小值一樣
+
+---
+
+<CodeSurferColumns>
+
+<Step>
+
+```markup 3 subtitle="找最小值"
+let min = arr[0]
+for (i from 0 to n-1) do
+  if (arr[i] < min) do
+    min = arr[i]
+  end if
+end for
+print min
+```
+
+```markup 3 subtitle="找最大值"
+let max = arr[0]
+for (i from 0 to n-1) do
+  if (arr[i] > max) do
+    max = arr[i]
+  end if
+end for
+print max
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+

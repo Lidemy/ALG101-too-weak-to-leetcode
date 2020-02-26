@@ -1,0 +1,39 @@
+{
+  "name": "alg101-too-weak-to-leetcode",
+  "version": "1.0.0",
+  "description": "這個 repo 會放與課程相關的資源，包含大綱、作業以及參考解答程式碼   完整課程可以在這邊找到：（待補）",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf .cache public",
+    "start": "gatsby develop",
+    "build": "yarn clean && gatsby build --prefix-paths"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lidemy/ALG101-too-weak-to-leetcode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lidemy/ALG101-too-weak-to-leetcode/issues"
+  },
+  "homepage": "https://github.com/Lidemy/ALG101-too-weak-to-leetcode#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "gatsby": "^2.17.15",
+    "gatsby-plugin-compile-es6-packages": "^2.1.0",
+    "gatsby-theme-mdx-deck": "^3.0.13",
+    "husky": "^3.0.9",
+    "mdx-deck": "^3.0.13",
+    "prettier": "~1.18.0",
+    "pretty-quick": "^2.0.1",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "code-surfer": "^3.1.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
