@@ -20,6 +20,10 @@
 
 ## Changelog
 
+### 2020-02-26
+
+參考 [https://github.com/pengx17/slides](https://github.com/pengx17/slides) 把簡報放到 repo 並且透過 GitHub Pages 發布
+
 ### 2020-01-21
 完成初版大綱
 
