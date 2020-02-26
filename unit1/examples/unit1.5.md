@@ -1,0 +1,9 @@
+# Unit1.5：實戰練習：fizz buzz
+
+```
+for (i from 1 to n) do
+  if (i % 15 === 0) print "FizzBuzz"
+  else if (i % 3 === 0) print "Fizz"
+  else if (i % 5 === 0) print "Buzz"
+end for
+```
