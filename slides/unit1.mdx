@@ -253,7 +253,7 @@ export const themes = [ Lidemy ]
 
 <Step subtitle="一步步的虛擬碼">
 
-```markup
+```js
 1. 令 i 為 1
 2. 如果 i>100，結束
 3. 印出 i
@@ -261,7 +261,7 @@ export const themes = [ Lidemy ]
 5. 跳回第 2 行
 ```
 
-```markup
+```js
 1. let i = 1
 2. if i>100 then exit
 3. print i
@@ -273,7 +273,7 @@ export const themes = [ Lidemy ]
 
 <Step subtitle="更像程式碼的虛擬碼">
 
-```markup
+```js
 1. 令 i 為 1
 2. 如果 i>100，結束
 3. 印出 i
@@ -281,7 +281,7 @@ export const themes = [ Lidemy ]
 5. 跳回第 2 行
 ```
 
-```markup
+```js
 1. for (i from 1 to 100) do
 2.   print i
 3. end for
@@ -304,7 +304,7 @@ export const themes = [ Lidemy ]
 
 <CodeSurfer>
 
-```markup
+```js
 for (i from 1 to 100) do
   if (n mod 2 === 1) then
     print i
@@ -312,7 +312,7 @@ for (i from 1 to 100) do
 end for
 ```
 
-```markup 2:4 subtitle="這叫一個區塊"
+```js 2:4 subtitle="這叫一個區塊"
 for (i from 1 to 100) do
   if (n mod 2 === 1) then
     print i
@@ -320,7 +320,7 @@ for (i from 1 to 100) do
 end for
 ```
 
-```markup 1,5 subtitle="這也叫一個區塊"
+```js 1,5 subtitle="這也叫一個區塊"
 for (i from 1 to 100) do
   if (n mod 2 === 1) then
     print i
@@ -336,7 +336,7 @@ end for
 
 <Step subtitle="縮排的重要性">
 
-```markup
+```js
 for (i from 1 to 100) do
   if (n mod 2 === 1) then
     print i
@@ -344,7 +344,7 @@ for (i from 1 to 100) do
 end for
 ```
 
-```markup
+```js
 for (i from 1 to 100) do
 if (n mod 2 === 1) then
 print i
@@ -389,26 +389,26 @@ Buzz
 
 <CodeSurfer>
 
-```markup subtitle="先來一個 1~n 的迴圈"
+```js subtitle="先來一個 1~n 的迴圈"
 for (i from 1 to n) do
   
 end for
 ```
 
-```markup subtitle="先判斷是否能被 15 整除"
+```js subtitle="先判斷是否能被 15 整除"
 for (i from 1 to n) do
   if (i % 15 === 0) print "FizzBuzz"
 end for
 ```
 
-```markup subtitle="再判斷是否能被 3 整除"
+```js subtitle="再判斷是否能被 3 整除"
 for (i from 1 to n) do
   if (i % 15 === 0) print "FizzBuzz"
   else if (i % 3 === 0) print "Fizz"
 end for
 ```
 
-```markup subtitle="最後判斷 5"
+```js subtitle="最後判斷 5"
 for (i from 1 to n) do
   if (i % 15 === 0) print "FizzBuzz"
   else if (i % 3 === 0) print "Fizz"
@@ -416,7 +416,7 @@ for (i from 1 to n) do
 end for
 ```
 
-```markup subtitle="打完收工"
+```js subtitle="打完收工"
 for (i from 1 to n) do
   if (i % 15 === 0) print "FizzBuzz"
   else if (i % 3 === 0) print "Fizz"
@@ -491,7 +491,7 @@ end for
 
 <CodeSurfer>
 
-```markup
+```js
 let 最小的牌 = 第一張牌
 for (i from 1 to n) do
   翻開第 i 張牌
@@ -509,7 +509,7 @@ end for
 
 <Step subtitle="從撲克牌變成陣列">
 
-```markup
+```js
 let 最小的牌 = 第一張牌
 for (i from 1 to n) do
   翻開第 i 張牌
@@ -519,7 +519,7 @@ for (i from 1 to n) do
 end for
 ```
 
-```markup
+```js
 let min = arr[0]
 for (i from 0 to n-1) do
   if (arr[i] < min) do
@@ -573,51 +573,51 @@ PS. 可以用 str[i] 取得第 i 個字
 
 <CodeSurfer>
 
-```markup subtitle="先來一個 0~n-1 的迴圈"
+```js subtitle="先來一個 0~n-1 的迴圈"
 for (i from 0 to n-1) do
   
 end for
 ```
 
-```markup subtitle="再印出每一個字"
+```js subtitle="再印出每一個字"
 for (i from 0 to n-1) do
   print str[i]
 end for
 ```
 
-```markup subtitle="接著把事情反過來做！"
+```js subtitle="接著把事情反過來做！"
 for (i from 0 to n-1) do
   print str[i]
 end for
 ```
 
-```markup 1:3 subtitle="就可以印出倒過來的字串"
+```js 1:3 subtitle="就可以印出倒過來的字串"
 for (i from n-1 to 0) do
   print str[i]
 end for
 ```
 
-```markup subtitle="再來不要印字串，而是存起來"
+```js subtitle="再來不要印字串，而是存起來"
 for (i from n-1 to 0) do
   print str[i]
 end for
 ```
 
-```markup subtitle="先準備一個字串儲存結果"
+```js subtitle="先準備一個字串儲存結果"
 let s = ''
 for (i from n-1 to 0) do
   print str[i]
 end for
 ```
 
-```markup subtitle="再把每一個字都加到 s 上面"
+```js subtitle="再把每一個字都加到 s 上面"
 let s = ''
 for (i from n-1 to 0) do
   s += str[i]
 end for
 ```
 
-```markup subtitle="最後印出，大功告成"
+```js subtitle="最後印出，大功告成"
 let s = ''
 for (i from n-1 to 0) do
   s += str[i]
@@ -625,7 +625,7 @@ end for
 print s
 ```
 
-```markup subtitle="最後印出，大功告成"
+```js subtitle="最後印出，大功告成"
 let s = ''
 for (i from n-1 to 0) do
   s += str[i]
@@ -652,27 +652,27 @@ print s
 
 <CodeSurfer>
 
-```markup subtitle="先來一個 0~n-1 的迴圈"
+```js subtitle="先來一個 0~n-1 的迴圈"
 for (i from 0 to n-1) do
   
 end for
 ```
 
-```markup subtitle="準備好儲存總和的變數"
+```js subtitle="準備好儲存總和的變數"
 let sum = 0
 for (i from 0 to n-1) do
   
 end for
 ```
 
-```markup subtitle="再把每一個元素都加到 sum 上面"
+```js subtitle="再把每一個元素都加到 sum 上面"
 let sum = 0
 for (i from 0 to n-1) do
   sum += arr[i]
 end for
 ```
 
-```markup subtitle="最後印出，大功告成"
+```js subtitle="最後印出，大功告成"
 let sum = 0
 for (i from 0 to n-1) do
   sum += arr[i]
@@ -680,7 +680,7 @@ end for
 print sum
 ```
 
-```markup subtitle="最後印出，大功告成"
+```js subtitle="最後印出，大功告成"
 let sum = 0
 for (i from 0 to n-1) do
   sum += arr[i]
@@ -696,7 +696,7 @@ print sum
 
 <Step>
 
-```markup subtitle="反轉字串"
+```js subtitle="反轉字串"
 let s = ''
 for (i from n-1 to 0) do
   s += str[i]
@@ -704,7 +704,7 @@ end for
 print s
 ```
 
-```markup subtitle="陣列總和"
+```js subtitle="陣列總和"
 let sum = 0
 for (i from 0 to n-1) do
   sum += arr[i]
@@ -735,7 +735,7 @@ print sum
 
 <Step>
 
-```markup 3 subtitle="找最小值"
+```js 3 subtitle="找最小值"
 let min = arr[0]
 for (i from 0 to n-1) do
   if (arr[i] < min) do
@@ -745,7 +745,7 @@ end for
 print min
 ```
 
-```markup 3 subtitle="找最大值"
+```js 3 subtitle="找最大值"
 let max = arr[0]
 for (i from 0 to n-1) do
   if (arr[i] > max) do

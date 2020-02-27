@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf .cache public",
-    "start": "gatsby develop",
+    "start": "yarn clean && gatsby develop",
     "build": "yarn clean && gatsby build --prefix-paths"
   },
   "repository": {
