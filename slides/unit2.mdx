@@ -1,0 +1,1905 @@
+import Lidemy from './theme'
+import { CodeSurfer, Step, CodeSurferColumns } from "code-surfer"
+import { nightOwl } from "@code-surfer/themes"
+import Layout from './Layout'
+
+export const themes = [Lidemy]
+
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit2：寫程式之前，先學會「看程式」
+
+</Layout>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit2.1：你其實看不懂程式碼
+
+</Layout>
+
+---
+
+# 看程式碼 ≠  「看」程式碼
+
+---
+
+# 看程式碼 = 理解程式碼如何運作
+
+---
+
+<CodeSurfer>
+
+```markup title="你能看懂嗎？" subtitle="陣列加總"
+let sum = 0
+for (i from 0 to n-1) do
+  sum += arr[i]
+end for
+print sum
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns>
+
+<Step>
+
+```markup 1
+let sum = 0
+for (i from 0 to n-1) do
+  sum += arr[i]
+end for
+print sum
+```
+
+```markup
+1. 假設 array 為 [1, 2, 3]
+2. 設 sum 為 0
+```
+
+</Step>
+
+<Step>
+
+```diff 2
+```
+
+```markup
+1. 假設 array 為 [1, 2, 3]
+2. 設 sum 為 0
+3. 讓 i 從 0 跑到 n-1（也就是 2）
+```
+
+</Step>
+
+<Step>
+
+```diff 2
+```
+
+```markup
+1. 假設 array 為 [1, 2, 3]
+2. 設 sum 為 0
+3. 讓 i 從 0 跑到 n-1（也就是 2）
+4. i 現在是 0
+```
+
+</Step>
+
+<Step>
+
+```diff 3
+```
+
+```markup
+1. 假設 array 為 [1, 2, 3]
+2. 設 sum 為 0
+3. 讓 i 從 0 跑到 n-1（也就是 2）
+4. i 現在是 0
+5. sum += arr[0]，sum 變成 1
+```
+
+</Step>
+
+<Step>
+
+```diff 4
+```
+
+```markup
+1. 假設 array 為 [1, 2, 3]
+2. 設 sum 為 0
+3. 讓 i 從 0 跑到 n-1（也就是 2）
+4. i 現在是 0
+5. sum += arr[0]，sum 變成 1
+6. 下一圈迴圈
+```
+
+</Step>
+
+<Step>
+
+```diff 2
+```
+
+```markup
+1. 假設 array 為 [1, 2, 3]
+2. 設 sum 為 0
+3. 讓 i 從 0 跑到 n-1（也就是 2）
+4. i 現在是 0
+5. sum += arr[0]，sum 變成 1
+6. 下一圈迴圈
+7. i 現在是 1
+```
+
+</Step>
+
+<Step>
+
+```diff 3
+```
+
+```markup
+1. 假設 array 為 [1, 2, 3]
+2. 設 sum 為 0
+3. 讓 i 從 0 跑到 n-1（也就是 2）
+4. i 現在是 0
+5. sum += arr[0]，sum 變成 1
+6. 下一圈迴圈
+7. i 現在是 1
+8. sum += arr[1]，sum 變成 1+2=3
+```
+
+</Step>
+
+<Step>
+
+```diff 4
+```
+
+```markup
+1. 假設 array 為 [1, 2, 3]
+2. 設 sum 為 0
+3. 讓 i 從 0 跑到 n-1（也就是 2）
+4. i 現在是 0
+5. sum += arr[0]，sum 變成 1
+6. 下一圈迴圈
+7. i 現在是 1
+8. sum += arr[1]，sum 變成 1+2=3
+9. 下一圈迴圈
+```
+
+</Step>
+
+<Step>
+
+```diff 2
+```
+
+```markup
+1. 假設 array 為 [1, 2, 3]
+2. 設 sum 為 0
+3. 讓 i 從 0 跑到 n-1（也就是 2）
+4. i 現在是 0
+5. sum += arr[0]，sum 變成 1
+6. 下一圈迴圈
+7. i 現在是 1
+8. sum += arr[1]，sum 變成 1+2=3
+9. 下一圈迴圈
+10. i 現在是 2
+```
+
+</Step>
+
+<Step>
+
+```diff 3
+```
+
+```markup
+1. 假設 array 為 [1, 2, 3]
+2. 設 sum 為 0
+3. 讓 i 從 0 跑到 n-1（也就是 2）
+4. i 現在是 0
+5. sum += arr[0]，sum 變成 1
+6. 下一圈迴圈
+7. i 現在是 1
+8. sum += arr[1]，sum 變成 1+2=3
+9. 下一圈迴圈
+10. i 現在是 2
+11. sum += arr[2]，sum 變成 3+3=6
+```
+
+</Step>
+
+<Step>
+
+```diff 4
+```
+
+```markup
+1. 假設 array 為 [1, 2, 3]
+2. 設 sum 為 0
+3. 讓 i 從 0 跑到 n-1（也就是 2）
+4. i 現在是 0
+5. sum += arr[0]，sum 變成 1
+6. 下一圈迴圈
+7. i 現在是 1
+8. sum += arr[1]，sum 變成 1+2=3
+9. 下一圈迴圈
+10. i 現在是 2
+11. sum += arr[2]，sum 變成 3+3=6
+12. 下一圈迴圈
+```
+
+</Step>
+
+<Step>
+
+```diff 2
+```
+
+```markup
+1. 假設 array 為 [1, 2, 3]
+2. 設 sum 為 0
+3. 讓 i 從 0 跑到 n-1（也就是 2）
+4. i 現在是 0
+5. sum += arr[0]，sum 變成 1
+6. 下一圈迴圈
+7. i 現在是 1
+8. sum += arr[1]，sum 變成 1+2=3
+9. 下一圈迴圈
+10. i 現在是 2
+11. sum += arr[2]，sum 變成 3+3=6
+12. 下一圈迴圈
+13. i 現在是 3，超出 n-1，結束
+```
+
+</Step>
+
+<Step>
+
+```diff 5
+```
+
+```markup
+1. 假設 array 為 [1, 2, 3]
+2. 設 sum 為 0
+3. 讓 i 從 0 跑到 n-1（也就是 2）
+4. i 現在是 0
+5. sum += arr[0]，sum 變成 1
+6. 下一圈迴圈
+7. i 現在是 1
+8. sum += arr[1]，sum 變成 1+2=3
+9. 下一圈迴圈
+10. i 現在是 2
+11. sum += arr[2]，sum 變成 3+3=6
+12. 下一圈迴圈
+13. i 現在是 3，超出 n-1，結束
+14. 輸出 sum
+```
+
+</Step>
+
+<Step>
+
+```diff subtitle="程式碼"
+```
+
+```markup subtitle="看懂程式碼"
+1. 假設 array 為 [1, 2, 3]
+2. 設 sum 為 0
+3. 讓 i 從 0 跑到 n-1（也就是 2）
+4. i 現在是 0
+5. sum += arr[0]，sum 變成 1
+6. 下一圈迴圈
+7. i 現在是 1
+8. sum += arr[1]，sum 變成 1+2=3
+9. 下一圈迴圈
+10. i 現在是 2
+11. sum += arr[2]，sum 變成 3+3=6
+12. 下一圈迴圈
+13. i 現在是 3，超出 n-1，結束
+14. 輸出 sum
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<CodeSurfer>
+
+```markup subtitle="找最大值"
+let max = arr[0]
+for (i from 0 to n-1) do
+  if (arr[i] > max) do
+    max = arr[i]
+  end if
+end for
+print max
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns>
+
+<Step>
+
+```markup 1
+let max = arr[0]
+for (i from 0 to n-1) do
+  if (arr[i] > max) do
+    max = arr[i]
+  end if
+end for
+print max
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+```
+
+</Step>
+
+<Step>
+
+```diff 2
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+```
+
+</Step>
+
+<Step>
+
+```diff 3
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+```
+
+</Step>
+
+<Step>
+
+```diff 5
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+```
+
+</Step>
+
+<Step>
+
+```diff 6
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+```
+
+</Step>
+
+<Step>
+
+```diff 2
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+```
+
+</Step>
+
+<Step>
+
+```diff 3
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+9. 判斷 arr[1] 是否 > 2
+```
+
+</Step>
+
+<Step>
+
+```diff 4
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+9. 判斷 arr[1] 是否 > 2
+10. 是，設 max 為 arr[1]，也就是 7
+```
+
+</Step>
+
+<Step>
+
+```diff 6
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+9. 判斷 arr[1] 是否 > 2
+10. 是，設 max 為 arr[1]，也就是 7
+11. 下一圈迴圈
+```
+
+</Step>
+
+<Step>
+
+```diff 2
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+9. 判斷 arr[1] 是否 > 2
+10. 是，設 max 為 arr[1]，也就是 7
+11. 下一圈迴圈
+12. i 現在是 2
+```
+
+</Step>
+
+<Step>
+
+```diff 3
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+9. 判斷 arr[1] 是否 > 2
+10. 是，設 max 為 arr[1]，也就是 7
+11. 下一圈迴圈
+12. i 現在是 2
+13. 判斷 arr[2] 是否 > 2
+```
+
+</Step>
+
+<Step>
+
+```diff 5
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+9. 判斷 arr[1] 是否 > 2
+10. 是，設 max 為 arr[1]，也就是 7
+11. 下一圈迴圈
+12. i 現在是 2
+13. 判斷 arr[2] 是否 > 2
+14. 不是
+```
+
+</Step>
+
+<Step>
+
+```diff 6
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+9. 判斷 arr[1] 是否 > 2
+10. 是，設 max 為 arr[1]，也就是 7
+11. 下一圈迴圈
+12. i 現在是 2
+13. 判斷 arr[2] 是否 > 2
+14. 不是
+15. 下一圈迴圈
+```
+
+</Step>
+
+<Step>
+
+```diff 2
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+9. 判斷 arr[1] 是否 > 2
+10. 是，設 max 為 arr[1]，也就是 7
+11. 下一圈迴圈
+12. i 現在是 2
+13. 判斷 arr[2] 是否 > 2
+14. 不是
+15. 下一圈迴圈
+16. i 現在是 3，超出條件，結束
+```
+
+</Step>
+
+<Step>
+
+```diff 7
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+9. 判斷 arr[1] 是否 > 2
+10. 是，設 max 為 arr[1]，也就是 7
+11. 下一圈迴圈
+12. i 現在是 2
+13. 判斷 arr[2] 是否 > 2
+14. 不是
+15. 下一圈迴圈
+16. i 現在是 3，超出條件，結束
+17. 輸出 max
+```
+
+</Step>
+
+<Step>
+
+```diff subtitle="程式碼"
+```
+
+```diff subtitle="看懂程式碼"
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit2.2：人體編譯器
+
+</Layout>
+
+---
+
+## 沒有訣竅，一行一行練習就對了
+
+這次要來看真的程式碼了
+
+---
+
+<CodeSurfer>
+
+```js subtitle="找最大值"
+let max = arr[0]
+for (let i=0; i<arr.length; i++) {
+  if (arr[i] > max) {
+    max = arr[i]
+  }
+}
+console.log(max)
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns>
+
+<Step>
+
+```js 1
+let max = arr[0]
+for (let i=0; i<arr.length; i++) {
+  if (arr[i] > max) {
+    max = arr[i]
+  }
+}
+console.log(max)
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+```
+
+</Step>
+
+<Step>
+
+```diff 2
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+```
+
+</Step>
+
+<Step>
+
+```diff 3
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+```
+
+</Step>
+
+<Step>
+
+```diff 5
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+```
+
+</Step>
+
+<Step>
+
+```diff 6
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+```
+
+</Step>
+
+<Step>
+
+```diff 2
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+```
+
+</Step>
+
+<Step>
+
+```diff 3
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+9. 判斷 arr[1] 是否 > 2
+```
+
+</Step>
+
+<Step>
+
+```diff 4
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+9. 判斷 arr[1] 是否 > 2
+10. 是，設 max 為 arr[1]，也就是 7
+```
+
+</Step>
+
+<Step>
+
+```diff 6
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+9. 判斷 arr[1] 是否 > 2
+10. 是，設 max 為 arr[1]，也就是 7
+11. 下一圈迴圈
+```
+
+</Step>
+
+<Step>
+
+```diff 2
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+9. 判斷 arr[1] 是否 > 2
+10. 是，設 max 為 arr[1]，也就是 7
+11. 下一圈迴圈
+12. i 現在是 2
+```
+
+</Step>
+
+<Step>
+
+```diff 3
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+9. 判斷 arr[1] 是否 > 2
+10. 是，設 max 為 arr[1]，也就是 7
+11. 下一圈迴圈
+12. i 現在是 2
+13. 判斷 arr[2] 是否 > 2
+```
+
+</Step>
+
+<Step>
+
+```diff 5
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+9. 判斷 arr[1] 是否 > 2
+10. 是，設 max 為 arr[1]，也就是 7
+11. 下一圈迴圈
+12. i 現在是 2
+13. 判斷 arr[2] 是否 > 2
+14. 不是
+```
+
+</Step>
+
+<Step>
+
+```diff 6
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+9. 判斷 arr[1] 是否 > 2
+10. 是，設 max 為 arr[1]，也就是 7
+11. 下一圈迴圈
+12. i 現在是 2
+13. 判斷 arr[2] 是否 > 2
+14. 不是
+15. 下一圈迴圈
+```
+
+</Step>
+
+<Step>
+
+```diff 2
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+9. 判斷 arr[1] 是否 > 2
+10. 是，設 max 為 arr[1]，也就是 7
+11. 下一圈迴圈
+12. i 現在是 2
+13. 判斷 arr[2] 是否 > 2
+14. 不是
+15. 下一圈迴圈
+16. i 現在是 3，超出條件，結束
+```
+
+</Step>
+
+<Step>
+
+```diff 7
+```
+
+```markup
+1. 假設 arr 為 [2, 7, 5]
+2. 設 max 為 arr[0]，也就是 2
+3. 讓 i 從 0 跑到 2
+4. i 現在是 0
+5. 判斷 arr[0] 是否 > 2
+6. 不是
+7. 下一圈迴圈
+8. i 現在是 1
+9. 判斷 arr[1] 是否 > 2
+10. 是，設 max 為 arr[1]，也就是 7
+11. 下一圈迴圈
+12. i 現在是 2
+13. 判斷 arr[2] 是否 > 2
+14. 不是
+15. 下一圈迴圈
+16. i 現在是 3，超出條件，結束
+17. 輸出 max
+```
+
+</Step>
+
+<Step>
+
+```diff subtitle="程式碼"
+```
+
+```diff subtitle="看懂程式碼"
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit2.3：Debug 神器：Debugger
+
+</Layout>
+
+---
+
+## Chrome Devtool debuuger 教學
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit2.4：Log 雖可恥但有用
+
+</Layout>
+
+---
+
+## 我的原則很簡單，就是加 log 加爆
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit2.5：實戰練習：找次大值
+
+</Layout>
+
+---
+
+<CodeSurfer>
+
+```js
+let arr = [5, 8, 6]
+let max = -Infinity
+let max2 = -Infinity
+for(let i=0; i<arr.length; i++) {
+  if (arr[i] > max) {
+    max2 = max
+    max = arr[i]
+  } else if (arr[i] > max2) {
+    max2 = arr[i]
+  }
+}
+console.log(max, max2)
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns>
+
+<Step>
+
+```js 1
+let arr = [5, 8, 6]
+let max = -Infinity
+let max2 = -Infinity
+for(let i=0; i<arr.length; i++) {
+  if (arr[i] > max) {
+    max2 = max
+    max = arr[i]
+  } else if (arr[i] > max2) {
+    max2 = arr[i]
+  }
+}
+console.log(max, max2)
+```
+
+```markup
+1. 要找次大值的陣列
+```
+
+</Step>
+
+<Step>
+
+```diff 2:3
+```
+
+```markup subtitle="max=max2=-Infinity"
+1. 要找次大值的陣列
+2. 把最大值跟次大值初始化成一個很小的數
+```
+
+</Step>
+
+<Step>
+
+```diff 4
+```
+
+```markup subtitle="i=0, max=max2=-Infinity"
+1. 要找次大值的陣列
+2. 把最大值跟次大值初始化成一個很小的數
+3. 迴圈遍歷整個陣列，i 目前是 0
+```
+
+</Step>
+
+<Step>
+
+```diff 5
+```
+
+```markup subtitle="i=0, max=max2=-Infinity"
+1. 要找次大值的陣列
+2. 把最大值跟次大值初始化成一個很小的數
+3. 迴圈遍歷整個陣列，i 目前是 0
+4. arr[0]（也就是 5）是不是 > max？
+```
+
+</Step>
+
+<Step>
+
+```diff 6:7
+```
+
+```markup subtitle="i=0, max=5, max2=-Infinity"
+1. 要找次大值的陣列
+2. 把最大值跟次大值初始化成一個很小的數
+3. 迴圈遍歷整個陣列，i 目前是 0
+4. arr[0]（也就是 5）是不是 > max？
+5. 是，代表原本的最大值會變成次大值，而 arr[0] 變成最大
+```
+
+</Step>
+
+<Step>
+
+```diff 4
+```
+
+```markup subtitle="i=1, max=5, max2=-Infinity"
+1. 要找次大值的陣列
+2. 把最大值跟次大值初始化成一個很小的數
+3. 迴圈遍歷整個陣列，i 目前是 0
+4. arr[0]（也就是 5）是不是 > max？
+5. 是，代表原本的最大值會變成次大值，而 arr[0] 變成最大
+6. 下一圈迴圈，i 目前是 1
+```
+
+</Step>
+
+<Step>
+
+```diff 5
+```
+
+```markup subtitle="i=1, max=5, max2=-Infinity"
+1. 要找次大值的陣列
+2. 把最大值跟次大值初始化成一個很小的數
+3. 迴圈遍歷整個陣列，i 目前是 0
+4. arr[0]（也就是 5）是不是 > max？
+5. 是，代表原本的最大值會變成次大值，而 arr[0] 變成最大
+6. 下一圈迴圈，i 目前是 1
+7. arr[1]（也就是 8）是不是 > max？
+```
+
+</Step>
+
+<Step>
+
+```diff 6:7
+```
+
+```markup subtitle="i=1, max=8, max2=5"
+1. 要找次大值的陣列
+2. 把最大值跟次大值初始化成一個很小的數
+3. 迴圈遍歷整個陣列，i 目前是 0
+4. arr[0]（也就是 5）是不是 > max？
+5. 是，代表原本的最大值會變成次大值，而 arr[0] 變成最大
+6. 下一圈迴圈，i 目前是 1
+7. arr[1]（也就是 8）是不是 > max？
+8. 是，max2 變成 5，max 變成 8
+```
+
+</Step>
+
+<Step>
+
+```diff 4
+```
+
+```markup subtitle="i=2, max=8, max2=5"
+1. 要找次大值的陣列
+2. 把最大值跟次大值初始化成一個很小的數
+3. 迴圈遍歷整個陣列，i 目前是 0
+4. arr[0]（也就是 5）是不是 > max？
+5. 是，代表原本的最大值會變成次大值，而 arr[0] 變成最大
+6. 下一圈迴圈，i 目前是 1
+7. arr[1]（也就是 8）是不是 > max？
+8. 是，max2 變成 5，max 變成 8
+9. 下一圈迴圈，i 目前是 2
+```
+
+</Step>
+
+<Step>
+
+```diff 5
+```
+
+```markup subtitle="i=2, max=8, max2=5"
+1. 要找次大值的陣列
+2. 把最大值跟次大值初始化成一個很小的數
+3. 迴圈遍歷整個陣列，i 目前是 0
+4. arr[0]（也就是 5）是不是 > max？
+5. 是，代表原本的最大值會變成次大值，而 arr[0] 變成最大
+6. 下一圈迴圈，i 目前是 1
+7. arr[1]（也就是 8）是不是 > max？
+8. 是，max2 變成 5，max 變成 8
+9. 下一圈迴圈，i 目前是 2
+10. arr[2]（也就是 6）是不是 > max？不是
+```
+
+</Step>
+
+<Step>
+
+```diff 8
+```
+
+```markup subtitle="i=2, max=8, max2=5"
+1. 要找次大值的陣列
+2. 把最大值跟次大值初始化成一個很小的數
+3. 迴圈遍歷整個陣列，i 目前是 0
+4. arr[0]（也就是 5）是不是 > max？
+5. 是，代表原本的最大值會變成次大值，而 arr[0] 變成最大
+6. 下一圈迴圈，i 目前是 1
+7. arr[1]（也就是 8）是不是 > max？
+8. 是，max2 變成 5，max 變成 8
+9. 下一圈迴圈，i 目前是 2
+10. arr[2]（也就是 6）是不是 > max？不是
+11. arr[2] 是不是 > max2？
+```
+
+</Step>
+
+<Step>
+
+```diff 9
+```
+
+```markup subtitle="i=2, max=8, max2=6"
+1. 要找次大值的陣列
+2. 把最大值跟次大值初始化成一個很小的數
+3. 迴圈遍歷整個陣列，i 目前是 0
+4. arr[0]（也就是 5）是不是 > max？
+5. 是，代表原本的最大值會變成次大值，而 arr[0] 變成最大
+6. 下一圈迴圈，i 目前是 1
+7. arr[1]（也就是 8）是不是 > max？
+8. 是，max2 變成 5，max 變成 8
+9. 下一圈迴圈，i 目前是 2
+10. arr[2]（也就是 6）是不是 > max？不是
+11. arr[2] 是不是 > max2？
+12. 是，max2 變成 arr[2]，也就是 6
+```
+
+</Step>
+
+<Step>
+
+```diff 4
+```
+
+```markup subtitle="i=3, max=8, max2=6"
+1. 要找次大值的陣列
+2. 把最大值跟次大值初始化成一個很小的數
+3. 迴圈遍歷整個陣列，i 目前是 0
+4. arr[0]（也就是 5）是不是 > max？
+5. 是，代表原本的最大值會變成次大值，而 arr[0] 變成最大
+6. 下一圈迴圈，i 目前是 1
+7. arr[1]（也就是 8）是不是 > max？
+8. 是，max2 變成 5，max 變成 8
+9. 下一圈迴圈，i 目前是 2
+10. arr[2]（也就是 6）是不是 > max？不是
+11. arr[2] 是不是 > max2？
+12. 是，max2 變成 arr[2]，也就是 6
+13. 下一圈迴圈，i 目前是 3，超出範圍，結束
+```
+
+</Step>
+
+<Step>
+
+```diff 12
+```
+
+```markup subtitle="i=3, max=8, max2=6"
+1. 要找次大值的陣列
+2. 把最大值跟次大值初始化成一個很小的數
+3. 迴圈遍歷整個陣列，i 目前是 0
+4. arr[0]（也就是 5）是不是 > max？
+5. 是，代表原本的最大值會變成次大值，而 arr[0] 變成最大
+6. 下一圈迴圈，i 目前是 1
+7. arr[1]（也就是 8）是不是 > max？
+8. 是，max2 變成 5，max 變成 8
+9. 下一圈迴圈，i 目前是 2
+10. arr[2]（也就是 6）是不是 > max？不是
+11. arr[2] 是不是 > max2？
+12. 是，max2 變成 arr[2]，也就是 6
+13. 下一圈迴圈，i 目前是 3，超出範圍，結束
+14. 印出 max 與 max2
+```
+
+</Step>
+
+<Step>
+
+```diff subtitle="程式碼"
+```
+
+```diff subtitle="看懂程式碼"
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit2.6：實戰練習：字串轉大寫
+
+</Layout>
+
+---
+
+# 先備知識
+
+[ASCII code](https://zh.wikipedia.org/wiki/ASCII)
+
+---
+
+a: 97  
+...  
+z: 122  
+
+A: 65  
+...  
+Z: 90  
+
+---
+
+## 該怎麼判斷是否是小寫字母？
+
+---
+
+方法一：判斷 ASCII code 是否介於 97 ~ 122
+
+---
+
+方法二：直接做比大小  
+`c >= 'a' && c <= 'z'`
+
+---
+
+## 小寫轉大寫
+ASCII code - 32  
+`String.fromCharCode('a'.charCodeAt(0) - 32)`
+
+---
+
+## 小寫轉大寫
+`s.toUpperCase()`  
+但我們暫時不用這種內建的好用函式
+
+---
+
+<CodeSurfer>
+
+```js
+let str = "Hi"
+let ans = ''
+for(let i=0; i<str.length; i++) {
+  let code = str.charCodeAt(i)
+  if (code >= 97 && code <= 122) {
+    ans += String.fromCharCode(code - 32)
+  } else {
+    ans += str[i]
+  }
+}
+console.log(ans)
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns>
+
+<Step>
+
+```js 1:2
+let str = "Hi"
+let ans = ''
+for(let i=0; i<str.length; i++) {
+  let code = str.charCodeAt(i)
+  if (code >= 97 && code <= 122) {
+    ans += String.fromCharCode(code - 32)
+  } else {
+    ans += str[i]
+  }
+}
+console.log(ans)
+```
+
+```markup subtitle="宣告初始值"
+str: 'Hi'
+ans: ''
+```
+
+</Step>
+
+<Step>
+
+```diff 3
+```
+
+```markup subtitle="迴圈從 0 開始"
+str: 'Hi'
+ans: ''
+i: 0
+```
+
+</Step>
+
+<Step>
+
+```diff 4
+```
+
+```markup subtitle="獲得 ASCII code"
+str: 'Hi'
+ans: ''
+i: 0
+code: 72
+```
+
+</Step>
+
+<Step>
+
+```diff 5
+```
+
+```markup subtitle="判斷是否符合條件"
+str: 'Hi'
+ans: ''
+i: 0
+code: 72
+```
+
+</Step>
+
+<Step>
+
+```diff 8
+```
+
+```markup subtitle="不符合，更改 ans"
+str: 'Hi'
+ans: 'H'
+i: 0
+code: 72
+```
+
+</Step>
+
+<Step>
+
+```diff 3
+```
+
+```markup subtitle="下一圈迴圈"
+str: 'Hi'
+ans: 'H'
+i: 2
+code: 72
+```
+
+</Step>
+
+<Step>
+
+```diff 4
+```
+
+```markup subtitle="獲得 ASCII code"
+str: 'Hi'
+ans: 'H'
+i: 2
+code: 105
+```
+
+</Step>
+
+<Step>
+
+```diff 5
+```
+
+```markup subtitle="判斷是否符合條件"
+str: 'Hi'
+ans: 'H'
+i: 2
+code: 105
+```
+
+</Step>
+
+<Step>
+
+```diff 6
+```
+
+```markup subtitle="是，更改 ans"
+str: 'Hi'
+ans: 'HI'
+i: 2
+code: 105
+```
+
+</Step>
+
+<Step>
+
+```diff 3
+```
+
+```markup subtitle="下一圈迴圈"
+str: 'Hi'
+ans: 'HI'
+i: 3
+code: 105
+```
+
+</Step>
+
+<Step>
+
+```diff 3
+```
+
+```markup subtitle="迴圈跑完了，結束"
+str: 'Hi'
+ans: 'HI'
+i: 3
+code: 105
+```
+
+</Step>
+
+<Step>
+
+```diff 11
+```
+
+```markup subtitle="印出 ans"
+str: 'Hi'
+ans: 'HI'
+i: 3
+code: 105
+```
+
+</Step>
+
+<Step>
+
+```diff
+```
+
+```markup subtitle="印出 ans"
+str: 'Hi'
+ans: 'HI'
+i: 3
+code: 105
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<CodeSurferColumns sizes={[2,2,1.5]}>
+
+<Step>
+
+```js 4:6 subtitle="判斷 ASCII code"
+let str = "Hi"
+let ans = ''
+for(let i=0; i<str.length; i++) {
+  let code = str.charCodeAt(i)
+  if (code >= 97 && code <= 122) {
+    ans += String.fromCharCode(code - 32)
+  } else {
+    ans += str[i]
+  }
+}
+console.log(ans)
+```
+
+```js 4:7 subtitle="比較字典序"
+let str = "Hi"
+let ans = ''
+for(let i=0; i<str.length; i++) {
+  if (str[i] >= 'a' && str[i] <= 'z') {
+    ans += String.fromCharCode(
+      str.charCodeAt(i) - 32
+    )
+  } else {
+    ans += str[i]
+  }
+}
+console.log(ans)
+```
+
+```js 2 subtitle="內建函式"
+let str = "Hi"
+let ans = str.toUpperCase()
+console.log(ans)
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit2.7：實戰練習：刪除特定字元
+
+</Layout>
+
+---
+
+## 不要想成「刪除」，想成「略過」
+
+---
+
+<CodeSurfer>
+
+```js
+let str = "hello"
+let deleted = 'l'
+let ans = ''
+for(let i=0; i<str.length; i++) {
+  if (str[i] !== deleted) {
+    ans += str[i]
+  }
+}
+console.log(ans)
+```
+
+</CodeSurfer>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit2.8：Project2 介紹
+
+</Layout>
+
+---
+
+# 給你程式碼，試著看懂
+
+---
+
+# 找次小值
+
+---
+
+# 大小寫互換
+hELLo => HellO
+
+---
+
+# 印出因數
+
+15 的因數：  
+1, 3, 5, 15
+
+---
+
+# 特別注意「結構」
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Project2：找次小值
+
+</Layout>
+
+---
+
+<CodeSurfer>
+
+```js subtitle="找次大值的變形版本"
+let arr = [10, 8, 6]
+let min = Infinity
+let min2 = Infinity
+for(let i=0; i<arr.length; i++) {
+  if (arr[i] < min) {
+    min2 = min
+    min = arr[i]
+  } else if (arr[i] < min2) {
+    min2 = arr[i]
+  }
+}
+console.log(min, min2)
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns>
+
+<Step>
+
+```js 2,3,5:10 subtitle="找次大值"
+let arr = [5, 8, 6]
+let max = -Infinity
+let max2 = -Infinity
+for(let i=0; i<arr.length; i++) {
+  if (arr[i] > max) {
+    max2 = max
+    max = arr[i]
+  } else if (arr[i] > max2) {
+    max2 = arr[i]
+  }
+}
+console.log(max, max2)
+```
+
+```js 2,3,5:10 subtitle="找次小值"
+let arr = [5, 8, 6]
+let min = Infinity
+let min2 = Infinity
+for(let i=0; i<arr.length; i++) {
+  if (arr[i] < min) {
+    min2 = min
+    min = arr[i]
+  } else if (arr[i] < min2) {
+    min2 = arr[i]
+  }
+}
+console.log(min, min2)
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Project2：大小寫互換
+
+</Layout>
+
+---
+
+<CodeSurfer>
+
+```js subtitle="結構與轉大寫類似"
+let str = "hELLo"
+let ans = ''
+for(let i=0; i<str.length; i++) {
+  let code = str.charCodeAt(i)
+  if (code >= 97 && code <= 122) {
+    ans += String.fromCharCode(code - 32)
+  } else if (code >= 65 && code <= 90) {
+    ans += String.fromCharCode(code + 32)
+  } else {
+    ans += str[i]
+  }
+}
+console.log(ans)
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns>
+
+<Step>
+
+```js 7:9 subtitle="轉大寫"
+let str = "hELLo"
+let ans = ''
+for(let i=0; i<str.length; i++) {
+  let code = str.charCodeAt(i)
+  if (code >= 97 && code <= 122) {
+    ans += String.fromCharCode(code - 32)
+  } else {
+    ans += str[i]
+  }
+}
+console.log(ans)
+```
+
+```js 7:11 subtitle="大小寫互換"
+let str = "hELLo"
+let ans = ''
+for(let i=0; i<str.length; i++) {
+  let code = str.charCodeAt(i)
+  if (code >= 97 && code <= 122) {
+    ans += String.fromCharCode(code - 32)
+  } else if (code >= 65 && code <= 90) {
+    ans += String.fromCharCode(code + 32)
+  } else {
+    ans += str[i]
+  }
+}
+console.log(ans)
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Project2：印出因數
+
+</Layout>
+
+---
+
+<CodeSurfer>
+
+```js subtitle="結構與印出奇數類似"
+let num = 30
+for(let i=1; i<=num; i++) {
+  if (num % i === 0) {
+    console.log(i)
+  }
+}
+```
+
+</CodeSurfer>
+
+
+---
+
+<CodeSurferColumns>
+
+<Step>
+
+```js 3:5 subtitle="印出奇數"
+let num = 30
+for(let i=1; i<=num; i++) {
+  if (i % 2 === 1) {
+    console.log(i)
+  }
+}
+```
+
+```js 3:5 subtitle="印出因數"
+let num = 30
+for(let i=1; i<=num; i++) {
+  if (num % i === 0) {
+    console.log(i)
+  }
+}
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+
