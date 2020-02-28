@@ -10,6 +10,10 @@ rl.on('line', function (line) {
 });
 
 rl.on('close', function() {
+  solve(lines)
+})
+
+function solve(lines) {
   var tmp = lines[0].split(' ')
   console.log(Number(tmp[0]) + Number(tmp[1]))
-})
+}

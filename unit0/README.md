@@ -47,5 +47,5 @@
 
 Project0 的目的是為了讓大家熟悉 LIOJ 的操作，只要完成 [LIOJ1001](https://oj.lidemy.com/problem/1001) 以及[LIOJ1002](https://oj.lidemy.com/problem/1002) 即可。
 
-LIOJ 操作教學（影片待補）
+[LIOJ 操作教學影片](https://www.youtube.com/watch?v=v7zv1ixaO3M)
 
