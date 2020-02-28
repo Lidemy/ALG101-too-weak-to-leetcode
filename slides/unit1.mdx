@@ -2,7 +2,7 @@ import Lidemy from './theme'
 import { CodeSurfer, Step, CodeSurferColumns } from "code-surfer"
 import { nightOwl } from "@code-surfer/themes"
 import Layout from './Layout'
-import Fullscreen from './Fullscreen'
+import Fullscreen from './fullscreen'
 
 export const themes = [ Lidemy ]
 
@@ -111,6 +111,47 @@ export const themes = [ Lidemy ]
 
 1. 一行只做一件事
 2. 善用跳轉（jump）
+
+---
+
+<CodeSurfer>
+
+```js subtitle="學生的一天"
+1. 早上八點起床
+2. 吃早餐
+3. 如果公車來了，搭公車
+4. 如果公車沒來，搭捷運
+5. 到學校上課
+6. 放學
+7. 吃晚餐
+8. 睡覺
+9. 回到步驟 1
+```
+
+```diff 1:2,5:8 subtitle="敘述"
+```
+
+```diff 3:4 subtitle="條件判斷"
+```
+
+```diff 1,9 subtitle="重複"
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```js subtitle="等人"
+1. 人來了嗎？
+2. 還沒，滑手機五分鐘
+3. 來了，跳到第五步
+4. 跳到第一步
+5. 一起去逛街
+```
+
+</CodeSurfer>
 
 ---
 
@@ -308,6 +349,20 @@ export const themes = [ Lidemy ]
 
 ```js
 for (i from 1 to 100) do
+    print i
+end for
+```
+
+```js
+for (i from 1 to 100) do
+  if (n mod 2 === 1) then
+    print i
+  end if
+end for
+```
+
+```js
+for (i from 1 to 100) do
   if (n mod 2 === 1) then
     print i
   end if
@@ -384,7 +439,7 @@ end for
 Fizz  
 4  
 Buzz  
-6  
+Fizz  
 7  
 
 ---
