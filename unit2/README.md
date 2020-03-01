@@ -53,11 +53,42 @@ chrome devtool debugger 的使用，範例同上
 範例輸入：[1, 2, 3]  
 範例輸出：2
 
+``` js
+let arr = [10, 8, 6]
+let min = Infinity
+let min2 = Infinity
+for(let i=0; i<arr.length; i++) {
+  if (arr[i] < min) {
+    min2 = min
+    min = arr[i]
+  } else if (arr[i] < min2) {
+    min2 = arr[i]
+  }
+}
+console.log(min, min2)
+```
+
 ## 2. 大小寫互換
 
 給一個字串，請把字串裡的大小寫互換  
 範例輸入：hELLo   
 範例輸出：HellO
+
+```js
+let str = "hELLo"
+let ans = ''
+for(let i=0; i<str.length; i++) {
+  let code = str.charCodeAt(i)
+  if (code >= 97 && code <= 122) {
+    ans += String.fromCharCode(code - 32)
+  } else if (code >= 65 && code <= 90) {
+    ans += String.fromCharCode(code + 32)
+  } else {
+    ans += str[i]
+  }
+}
+console.log(ans)
+```
 
 ## 3. 印出因數
 
@@ -70,4 +101,13 @@ chrome devtool debugger 的使用，範例同上
 3
 5
 15
+```
+
+```js
+let num = 30
+for(let i=1; i<=num; i++) {
+  if (num % i === 0) {
+    console.log(i)
+  }
+}
 ```
