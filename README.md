@@ -3,9 +3,13 @@
 這個 repo 會放與課程相關的資源，包含大綱、作業以及參考解答程式碼  
 完整課程可以在這邊找到：（待補）
 
-[課程簡報](https://lidemy.github.io/ALG101-too-weak-to-leetcode/public/) （尚未完成）
+課程相關資源：
 
-底下是個單元名稱以及大綱連結，點下去以後會有個資料夾叫做 examples，裡面是單元中出現的範例程式碼以及作業參考解答：
+1. 課程大綱（請見下方）
+2. 範例程式碼及作業參考解答（下方大綱點進去後，再點進 examples 資料夾即可）
+3. [課程簡報](https://lidemy.github.io/ALG101-too-weak-to-leetcode/public/) （尚未完成）
+
+底下是個單元名稱以及大綱連結：
 
 * [Unit0：課程簡介](unit0)
 * [Unit1：要學好程式，從不要寫程式開始](unit1)
