@@ -1,0 +1,226 @@
+import Lidemy from './theme'
+import { CodeSurfer, Step, CodeSurferColumns } from "code-surfer"
+import Layout from './Layout'
+import Fullscreen from './Fullscreen'
+
+export const themes = [Lidemy]
+
+<Fullscreen />
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit3：寫程式前的最後一步：看懂題目
+
+</Layout>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit3.1：弄清題意，翻成白話文
+
+</Layout>
+
+---
+
+## 大部分題目，都是用一堆故事來包裝  
+這就是為什麼比較有趣
+
+---
+
+## 考驗程式能力前，先考驗閱讀能力
+
+---
+
+[LIOJ 1008：幾個水桶](https://oj.lidemy.com/problem/1008)
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit3.2：最重要的小事：輸入範圍
+
+</Layout>
+
+---
+
+# 輸入範圍為什麼重要？
+
+---
+
+## 雙層公寓 vs 台北 101
+
+---
+
+## 小飛機 vs 空中巴士 A380
+
+---
+
+## 不同範圍 = 不同限制
+
+---
+
+1. 空間限制
+2. 時間限制
+3. 型態限制
+
+---
+
+# 空間估算
+
+* int: 4 bytes
+* double: 8 bytes
+* JS 中的 Number：8 bytes
+
+---
+
+# 一百萬個數字
+
+(8 * 1e6) / 1024 = 7812 KB  
+= 7.6 MB
+
+---
+
+# 十億個數字
+
+(8 * 1e8) / 1024 = 781200 KB  
+= 7600 MB = 7.4 GB
+
+---
+
+# 範圍決定方法
+
+排序十萬個數字，可以全都載入到記憶體  
+但如果要排十億個數字呢？
+
+---
+
+# 時間限制
+
+對初學題目來說不太重要（先求有再求好）  
+以後講到 big O 的時候就很重要
+
+---
+
+# 範圍決定方法
+
+排序一百萬個數字跟排序十個數字  
+用的方法不一樣
+
+---
+
+[LIOJ 1004：聯誼順序比大小](https://oj.lidemy.com/problem/1004)
+
+---
+
+# 型態限制
+
+1. int： -2147483648 ~ 2147483647
+2. JS 數字： Number.MAX_SAFE_INTEGER
+3. 浮點數精準度問題
+
+---
+
+# 範圍決定方法
+
+20 位數的數字比大小  
+跟 200 位數的數字比大小不一樣
+
+---
+
+## 把範圍講清楚的題目，才是好題目  
+### 沒有的話就問清楚
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit3.3：輸入與輸出方式
+
+</Layout>
+
+---
+
+# 1. 以函式為主
+
+---
+
+# 2. 以標準輸出入為主
+
+---
+
+`cat input.txt | node code.js`
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit3.4：Project3 介紹
+
+</Layout>
+
+---
+
+用白話文改寫  
+並提出可能會有問題的地方
+
+---
+
+1. [LIOJ 1010：靈魂伴侶](https://oj.lidemy.com/problem/1010)
+2. [LIOJ 1015：音速小子](https://oj.lidemy.com/problem/1015)
+3. [LIOJ 1017：貪婪的小偷](https://oj.lidemy.com/problem/1017)
+
+---
+
+# 解答篇
+
+底下有雷，請先完成作業再觀看
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Project3：LIOJ 1010：靈魂伴侶
+
+</Layout>
+
+---
+
+# 判斷兩數是否相等
+
+數字範圍沒有該注意的地方
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Project3：LIOJ 1015：音速小子
+
+</Layout>
+
+---
+
+# 把一個數字乘 340
+
+數字範圍沒有該注意的地方
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Project3：LIOJ 1017：貪婪的小偷
+
+</Layout>
+
+---
+
+# 取價值最高的 C 項物品
+

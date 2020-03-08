@@ -13,7 +13,7 @@
 
 ## Unit6.5：Project6 介紹
 
-Project6 會實作一些常見的內建函式的功能：
+Project6 會實作一些常見的內建函式的功能，題目列表如下：
 
 1. [LIOJ 1036：Array reverse](https://oj.lidemy.com/problem/1036)
 2. [LIOJ 1037：Array filter](https://oj.lidemy.com/problem/1037)
@@ -25,3 +25,59 @@ Project6 會實作一些常見的內建函式的功能：
 8. [LIOJ 1043：String endsWith](https://oj.lidemy.com/problem/1043)
 9. [LIOJ 1044：String padEnd](https://oj.lidemy.com/problem/1044)
 10. [LIOJ 1045：String slice](https://oj.lidemy.com/problem/1045)
+
+底下提供了基本的程式碼，最好能夠以這個格式來實作，但如果覺得很卡或是不順手，不一定要 follow：
+
+```js
+// LIOJ 1036：Array reverse
+function reverse(arr) {
+
+}
+
+// LIOJ 1037：Array filter
+// 這題 shouldFilter 會是一個 function，但難度會比較高
+// 若是做不出來，也可以調整參數
+function filter(arr, shouldFilter) {
+
+}
+
+// LIOJ 1038：Array indexOf
+function indexOf(arr, searchElement) {
+
+}
+
+// LIOJ 1039：Array fill
+function fill(arr, value) {
+
+}
+
+// LIOJ 1040：Array join
+function join(arr, separator) {
+
+}
+
+// LIOJ 1041：String trim
+function trim(str) {
+
+}
+
+// LIOJ 1042：String toLowerCase
+function toLowerCase(str) {
+
+}
+
+// LIOJ 1043：String endsWith
+function endsWith(str, searchString) {
+
+}
+
+// LIOJ 1044：String padEnd
+function padEnd(str, targetLength, padString) {
+
+}
+
+// LIOJ 1045：String slice
+function slice(str, beginIndex, endIndex) {
+
+}
+```
