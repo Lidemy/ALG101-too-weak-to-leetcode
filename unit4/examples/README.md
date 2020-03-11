@@ -15,10 +15,16 @@
 
 題目連結：[LIOJ 1023：印出聖誕樹](https://oj.lidemy.com/problem/1023)
 
+參考解答：[LIOJ 1023](1023.js)
+
 ### 2. LIOJ 1024：NN 乘法表
 
 題目連結：[LIOJ 1024：NN 乘法表](https://oj.lidemy.com/problem/1024)
 
+參考解答：[LIOJ 1024](1024.js)
+
 ### 3. LIOJ 1025：水仙花數
 
 題目連結：[LIOJ 1025：水仙花數](https://oj.lidemy.com/problem/1025)
+
+參考解答：[LIOJ 1025](1025.js)

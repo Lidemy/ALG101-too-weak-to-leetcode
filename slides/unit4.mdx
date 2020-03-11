@@ -1,0 +1,1144 @@
+import Lidemy from './theme'
+import { CodeSurfer, Step, CodeSurferColumns } from "code-surfer"
+import Layout from './Layout'
+import Fullscreen from './Fullscreen'
+
+export const themes = [Lidemy]
+
+<Fullscreen />
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit4：主角總是最後才登場：寫程式囉
+
+</Layout>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit4.1：從虛擬碼到程式碼
+
+</Layout>
+
+---
+
+# 虛擬碼寫得好，翻譯沒困擾
+
+---
+
+<CodeSurfer>
+
+```js subtitle="陣列加總"
+let sum = 0
+for (i from 0 to n-1) do
+  sum += arr[i]
+end for
+print sum
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns>
+
+<Step>
+
+```js
+let sum = 0
+for (i from 0 to n-1) do
+  sum += arr[i]
+end for
+print sum
+```
+
+```js
+```
+
+</Step>
+
+<Step>
+
+```diff 1
+```
+
+```js subtitle="跟虛擬碼一樣"
+let sum = 0
+```
+
+</Step>
+
+<Step>
+
+```diff 2,4
+```
+
+```js subtitle="翻譯迴圈"
+let sum = 0
+for (let i=0; i<n; i++) {
+  
+}
+```
+
+</Step>
+
+<Step>
+
+```diff 3
+```
+
+```js subtitle="跟虛擬碼一樣"
+let sum = 0
+for (let i=0; i<n; i++) {
+  sum += arr[i]
+}
+```
+
+</Step>
+
+<Step>
+
+```diff 5
+```
+
+```js subtitle="翻譯 print"
+let sum = 0
+for (let i=0; i<n; i++) {
+  sum += arr[i]
+}
+console.log(sum)
+```
+
+</Step>
+
+<Step>
+
+```diff subtitle="虛擬碼"
+```
+
+```diff subtitle="程式碼"
+```
+
+</Step>
+
+<Step>
+
+```diff
+```
+
+```js subtitle="也可以改成 i <= n-1"
+let sum = 0
+for (let i=0; i<n; i++) {
+for (let i=0; i<=n-1; i++) {
+  sum += arr[i]
+}
+console.log(sum)
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<CodeSurfer>
+
+```js subtitle="找最大值"
+let max = arr[0]
+for (i from 0 to n-1) do
+  if (arr[i] > max) do
+    max = arr[i]
+  end if
+end for
+print max
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns>
+
+<Step>
+
+```js 1
+let max = arr[0]
+for (i from 0 to n-1) do
+  if (arr[i] > max) do
+    max = arr[i]
+  end if
+end for
+print max
+```
+
+```js subtitle="跟程式碼一樣"
+let max = arr[0]
+```
+
+</Step>
+
+<Step>
+
+```diff 2,6
+```
+
+```js subtitle="翻譯迴圈，這邊用 i<=n-1"
+let max = arr[0]
+for (let i=0; i<=n-1; i++) {
+  
+}
+```
+
+</Step>
+
+<Step>
+
+```diff 3,5
+```
+
+```js subtitle="翻譯判斷式"
+let max = arr[0]
+for (let i=0; i<=n-1; i++) {
+  if (arr[i] > max) {
+
+  }
+}
+```
+
+</Step>
+
+<Step>
+
+```diff 4
+```
+
+```js subtitle="跟程式碼一樣"
+let max = arr[0]
+for (let i=0; i<=n-1; i++) {
+  if (arr[i] > max) {
+    max = arr[i]
+  }
+}
+```
+
+</Step>
+
+<Step>
+
+```diff 7
+```
+
+```js subtitle="翻譯 print"
+let max = arr[0]
+for (let i=0; i<=n-1; i++) {
+  if (arr[i] > max) {
+    max = arr[i]
+  }
+}
+console.log(max)
+```
+
+</Step>
+
+<Step>
+
+```diff subtitle="虛擬碼"
+```
+
+```diff subtitle="程式碼"
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit4.2：函式填空法
+
+</Layout>
+
+---
+
+# 目的
+
+避免初心者殺手：雙層迴圈
+
+---
+
+[LIOJ 1020：判斷質數](https://oj.lidemy.com/problem/1020)
+
+---
+
+# 方法
+
+加 function 加爆
+
+---
+
+<CodeSurfer>
+
+```js subtitle="虛擬碼"
+for (i from 0 to n-1) do
+  if (arr[i] 是質數) do
+    print "Prime"
+  else
+    print "Composite"
+  end if
+end for
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns>
+
+<Step>
+
+```js subtitle="虛擬碼"
+for (i from 0 to n-1) do
+  if (arr[i] 是質數) do
+    print "Prime"
+  else
+    print "Composite"
+  end if
+end for
+```
+
+```js subtitle="程式碼"
+for (let i=0; i<n; i++) {
+  if (arr[i] 是質數){
+    console.log("Prime")
+  } else {
+    console.log("Composite")
+  }
+}
+```
+
+</Step>
+
+<Step>
+
+```diff subtitle="虛擬碼"
+```
+
+```js 1:11 subtitle="變成函式"
+for (let i=0; i<n; i++) {
+  if (isPrime(arr[i])){
+    console.log("Prime")
+  } else {
+    console.log("Composite")
+  }
+}
+
+function isPrime(n) {
+  // TODO
+}
+```
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<CodeSurfer>
+
+```js subtitle="簡化問題 - 實作 isPrime"
+for (let i=0; i<n; i++) {
+  if (isPrime(arr[i])){
+    console.log("Prime")
+  } else {
+    console.log("Composite")
+  }
+}
+
+function isPrime(n) {
+  // TODO
+}
+```
+
+```js 9:17 subtitle="實作判斷質數邏輯"
+for (let i=0; i<n; i++) {
+  if (isPrime(arr[i])){
+    console.log("Prime")
+  } else {
+    console.log("Composite")
+  }
+}
+
+function isPrime(n) {
+  if (n === 1) return false
+  for (let i=2; i<n; i++) {
+    if (n % i === 0) {
+      return false
+    }
+  }
+  return true
+}
+```
+
+```diff subtitle="打完收工"
+```
+
+```diff 1:7 subtitle="第一部分：主要邏輯"
+```
+
+```diff 9:17 subtitle="第二部分：輔助函式"
+```
+
+```diff
+```
+
+</CodeSurfer>
+
+---
+
+# 函式填空法 = 切割問題
+
+---
+
+印出陣列中的質數  
+= 印出陣列 + 質數
+
+---
+
+<CodeSurfer>
+
+```js subtitle="試著把 function 加回去"
+for (let i=0; i<n; i++) {
+  if (isPrime(arr[i])){
+    console.log("Prime")
+  } else {
+    console.log("Composite")
+  }
+}
+
+function isPrime(n) {
+  if (n === 1) return false
+  for (let i=2; i<n; i++) {
+    if (n % i === 0) {
+      return false
+    }
+  }
+  return true
+}
+```
+
+```js 1:8 subtitle="1. 把函式拿掉，維持主要邏輯不變"
+for (let i=0; i<n; i++) {
+  let isPrime = true
+  if (isPrime){
+    console.log("Prime")
+  } else {
+    console.log("Composite")
+  }
+}
+```
+
+```js subtitle="2. 加上判斷質數程式碼"
+for (let i=0; i<n; i++) {
+  let isPrime = true
+  for (let j=2; j<arr[i]; j++) {
+    if (arr[i] % j === 0) {
+      isPrime = false
+      break
+    }
+  }
+  if (isPrime){
+    console.log("Prime")
+  } else {
+    console.log("Composite")
+  }
+}
+```
+
+```js subtitle="3. 別忘了 edge case"
+for (let i=0; i<n; i++) {
+  let isPrime = true
+  if (arr[i] === 1) {
+    isPrime = false
+  }
+  for (let j=2; j<arr[i]; j++) {
+    if (arr[i] % j === 0) {
+      isPrime = false
+      break
+    }
+  }
+  if (isPrime){
+    console.log("Prime")
+  } else {
+    console.log("Composite")
+  }
+}
+```
+
+```diff
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns>
+
+<Step>
+
+```js subtitle="函式版"
+for (let i=0; i<n; i++) {
+  if (isPrime(arr[i])){
+    console.log("Prime")
+  } else {
+    console.log("Composite")
+  }
+}
+
+function isPrime(n) {
+  if (n === 1) return false
+  for (let i=2; i<n; i++) {
+    if (n % i === 0) {
+      return false
+    }
+  }
+  return true
+}
+```
+
+```js subtitle="混在一起版"
+for (let i=0; i<n; i++) {
+  let isPrime = true
+  if (arr[i] === 1) {
+    isPrime = false
+  }
+  for (let j=2; j<arr[i]; j++) {
+    if (arr[i] % j === 0) {
+      isPrime = false
+      break
+    }
+  }
+  if (isPrime){
+    console.log("Prime")
+  } else {
+    console.log("Composite")
+  }
+}
+```
+
+</Step>
+
+<Step>
+
+```diff 9:17 subtitle="函式版"
+```
+
+```diff 2:11 subtitle="混在一起版"
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+# 方法
+
+加 function 加爆
+
+---
+
+<CodeSurfer>
+
+```js
+for (let i=0; i<n; i++) {
+  handleNumber(arr[i])
+}
+
+function handleNumber(n) {
+  if (isPrime(n)){
+    console.log("Prime")
+  } else {
+    console.log("Composite")
+  }
+}
+
+function isPrime(n) {
+  // 省略
+}
+```
+
+</CodeSurfer>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit4.3：簡化法
+
+</Layout>
+
+---
+
+# 要寫好文章，先從寫句子開始
+
+---
+
+# 難的解不出來，先解簡化版的
+
+---
+
+[LIOJ 1021：好多星星](https://oj.lidemy.com/problem/1021)
+
+---
+
+## 不會輸出 n 個，就先輸出一個就好
+
+---
+
+<CodeSurfer>
+
+```js
+for (let i=1; i<=N; i++) {
+  console.log('*')
+}
+```
+
+```diff subtitle="接著搭配函式填空法"
+```
+
+```js subtitle="加上函式"
+for (let i=1; i<=N; i++) {
+  printStar(i)
+}
+
+function printStar(n) {
+  // TODO: 印出 n 個星星
+}
+```
+
+```diff subtitle="問題被簡化成：如何印出 n 個星星"
+```
+
+```js subtitle="利用迴圈重複加上星星"
+for (let i=1; i<=N; i++) {
+  printStar(i)
+}
+
+function printStar(n) {
+  let s = ''
+  for(let i=1; i<=n; i++) {
+    s += '*'
+  }
+  console.log(s)
+}
+```
+
+```diff subtitle="解完簡單的，難的就一起解決了"
+```
+
+</CodeSurfer>
+
+---
+
+# 把大問題變成小問題
+
+---
+
+# 電腦壞了
+
+哪裡壞？主機還是螢幕還是網路？
+
+---
+
+# 電腦主機壞了
+
+哪裡壞？記憶體？CPU？主機板？
+
+---
+
+# 電源供應器壞了
+
+換電源供應器，搞定
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit4.4：寫程式三寶：迴圈、函式、判斷式
+
+</Layout>
+
+---
+
+## 這題是不是可以用 array map 解？
+
+---
+
+## 這題是不是可以用 array filter 解？
+
+---
+
+## 這題是不是可以用 array reduce 解？
+
+---
+
+## 這題是不是可以用 xxx 解？
+
+---
+
+## 大部分的題目，需要的就只有三個
+
+1. 迴圈
+2. 函式
+3. 判斷式
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit4.5：實戰：印出金字塔
+
+</Layout>
+
+---
+
+[LIOJ 1022：印出金字塔](https://oj.lidemy.com/problem/1022)
+
+---
+
+# 觀察規律
+為了方便起見，空格用 _ 代替
+
+---
+
+<CodeSurferColumns>
+
+<Step title="尋找規律">
+
+```js subtitle="n=1"
+*
+```
+
+```js subtitle="n=2"
+_*
+***
+```
+
+```js subtitle="n=3"
+__*
+_***
+*****
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+# 規律
+ 
+1. 一共有 n 層
+2. 第 i 層會有 2i - 1 個星星
+3. 星星會置中
+4. 需要 n - i 個空白
+
+---
+
+<CodeSurfer>
+
+```js subtitle="函式填空法"
+for(let i=1; i<=n; i++) {
+  printLayer(i, n)
+}
+
+function printLayer(i, n) {
+  
+}
+```
+
+```diff 2 subtitle="要把第 i 層跟全部有幾層一起傳進去"
+```
+
+```js subtitle="加上一個輔助的函式"
+for(let i=1; i<=n; i++) {
+  printLayer(i, n)
+}
+
+function printLayer(i, n) {
+  
+}
+
+function repeat(str, n) {
+  let s = ''
+  for (let i=1; i<=n; i++) {
+    s += str
+  }
+  return s
+}
+```
+
+```js subtitle="按照規律把答案填上去"
+for(let i=1; i<=n; i++) {
+  printLayer(i, n)
+}
+
+function printLayer(i, n) {
+  // 空白 + 星星
+  let str = repeat(' ', n - i)+ repeat('*', 2*i - 1)
+  console.log(str)
+}
+
+function repeat(str, n) {
+  let s = ''
+  for (let i=1; i<=n; i++) {
+    s += str
+  }
+  return s
+}
+```
+
+```diff
+```
+
+</CodeSurfer>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit4.6：實戰：九九乘法表
+
+</Layout>
+
+---
+
+```
+1*1=1
+1*2=2
+...
+1*9=9
+2*1=1
+...
+9*9=9
+```
+
+---
+
+# 簡化法
+
+先產生 `1*1` ~ `1*9`
+
+---
+
+<CodeSurfer>
+
+```js
+  for (let i=1; i<=9; i++) {
+    console.log('1*' + i + '=' + 1*i)
+  }
+```
+
+```js subtitle="暴力九九乘法表"
+  for (let i=1; i<=9; i++) {
+    console.log('1*' + i + '=' + 1*i)
+  }
+
+  for (let i=1; i<=9; i++) {
+    console.log('2*' + i + '=' + 2*i)
+  }
+
+  for (let i=1; i<=9; i++) {
+    console.log('3*' + i + '=' + 3*i)
+  }
+
+  // ...下略
+```
+
+```js subtitle="不如先包成函式"
+  for (let i=1; i<=9; i++) {
+    console.log('1*' + i + '=' + 1*i)
+  }
+```
+
+```js subtitle="只是把 1 換成 k"
+function printTable(k) {
+  for (let i=1; i<=9; i++) {
+    console.log(k + '*' + i + '=' + k*i)
+  }
+}
+```
+
+```js subtitle="就可以變這樣"
+function printTable(k) {
+  for (let i=1; i<=9; i++) {
+    console.log(k + '*' + i + '=' + k*i)
+  }
+}
+
+printTable(1)
+printTable(2)
+printTable(3)
+// ...中間省略
+printTable(9)
+```
+
+```diff subtitle="咦？不就是迴圈嗎"
+```
+
+```js 1:9
+function printTable(k) {
+  for (let i=1; i<=9; i++) {
+    console.log(k + '*' + i + '=' + k*i)
+  }
+}
+
+for(let k=1; k<=9; k++) {
+  printTable(k)
+}
+```
+
+```js 1:13
+// 這個會產生 k*1~k*9
+function printTable(k) {
+  for (let i=1; i<=9; i++) {
+    console.log(k + '*' + i + '=' + k*i)
+  }
+}
+
+// 這個會產生 1~9
+for(let k=1; k<=9; k++) {
+  printTable(k)
+}
+
+// 結果：產生 1*1~9*9
+```
+
+```diff subtitle="可是，總有一天要學會雙層迴圈"
+```
+
+```js
+for(let k=1; k<=9; k++) {
+  for (let i=1; i<=9; i++) {
+    console.log(k + '*' + i + '=' + k*i)
+  }
+}
+```
+
+```js 1:7
+// 這個產生 1~9
+for(let k=1; k<=9; k++) {
+  // 這個也產生 1~9
+  for (let i=1; i<=9; i++) {
+    console.log(k + '*' + i + '=' + k*i)
+  }
+}
+```
+
+```diff subtitle="來用 debugger 一行行跑"
+```
+
+</CodeSurfer>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit4.7：實戰：印出 1-100 的平方數
+
+</Layout>
+
+---
+
+# 簡化法
+
+先印出 1~100
+
+---
+
+<CodeSurfer>
+
+```js
+for (let i=1; i<=100; i++) {
+    console.log(i)
+}
+```
+
+```js subtitle="函式填空法"
+for (let i=1; i<=100; i++) {
+    console.log(i)
+}
+```
+
+```js subtitle="函式填空法"
+for (let i=1; i<=100; i++) {
+  if (isSquare(i)) {
+    console.log(i)
+  }
+}
+
+function isSquare(n) {
+  
+}
+```
+
+</CodeSurfer>
+
+---
+
+# 如何判斷平方數？
+
+開根號：Math.sqrt(n)  
+無條件捨去：Math.floor(n)
+
+---
+
+<CodeSurfer>
+
+```js
+for (let i=1; i<=100; i++) {
+  if (isSquare(i)) {
+    console.log(i)
+  }
+}
+
+function isSquare(n) {
+  
+}
+```
+
+```js subtitle="加上邏輯"
+for (let i=1; i<=100; i++) {
+  if (isSquare(i)) {
+    console.log(i)
+  }
+}
+
+function isSquare(n) {
+  let root = Math.floor(Math.sqrt(n))
+  return root * root === n
+}
+```
+
+```diff subtitle="完成"
+```
+
+</CodeSurfer>
+
+---
+
+# 另一種想法
+
+印出平方數，直到超過 100 為止
+
+---
+
+<CodeSurfer>
+
+```js
+let i=1
+while(i*i <= 100) {
+  console.log(i*i)
+  i++
+}
+```
+
+</CodeSurfer>
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Unit4.8：Project4 介紹
+
+</Layout>
+
+---
+
+1. [LIOJ 1023：印出聖誕樹](https://oj.lidemy.com/problem/1023)
+2. [LIOJ 1024：NM 乘法表](https://oj.lidemy.com/problem/1024)
+3. [LIOJ 1025：水仙花數](https://oj.lidemy.com/problem/1025)
+
+---
+
+# 解答篇
+
+底下有雷，請先完成作業再觀看
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Project4：LIOJ 1023：印出聖誕樹
+
+</Layout>
+
+---
+
+# 解題流程
+
+1. 觀察規律
+2. 函式填空法
+3. 填上答案
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Project4：LIOJ 1024：NM 乘法表
+
+</Layout>
+
+---
+
+# 解題流程
+
+1. 考驗抽象化能力
+
+---
+
+<Layout>
+
+# 先別急著寫 leetcode
+## Project4：LIOJ 1025：水仙花數
+
+</Layout>
+
+---
+
+# 解題難點
+
+1. 如何判斷幾位數
+2. 如何取出各個數字
+
+---
+
+# 如何判斷幾位數
+
+一直 / 10
+
+---
+
+# 取出各個數字
+
+% 10 搭配 / 10
+
+---
+
+# 偷吃步
+
+轉成字串
+
