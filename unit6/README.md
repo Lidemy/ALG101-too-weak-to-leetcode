@@ -35,9 +35,9 @@ function reverse(arr) {
 }
 
 // LIOJ 1037：Array filter
-// 這題 shouldFilter 會是一個 function，但難度會比較高
+// 這題 callback 會是一個 function，但難度會比較高
 // 若是做不出來，也可以調整參數
-function filter(arr, shouldFilter) {
+function filter(arr, callback) {
 
 }
 
