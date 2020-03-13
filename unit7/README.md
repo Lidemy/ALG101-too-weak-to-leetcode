@@ -18,11 +18,20 @@
 
 ## Unit7.1：NPSC 是什麼？
 ## Unit7.2：如何使用 NPSC 的測資？
-## Unit7.3：實戰：NPSC 2019 國中組初賽
-## Unit7.4：實戰：NPSC 2009 國中組初賽
-## Unit7.5：實戰：LIOJ 1015：音速小子
 
-## Unit7.6：Project7 介紹
+```
+cat pa.in | node code.js | diff pa.out -
+```
+
+## Unit7.3：實戰：NPSC 2019 國中組初賽
+
+相關資訊：[NPSC 2019](https://contest.cc.ntu.edu.tw/npsc2019/)
+
+## Unit7.4：實戰：NPSC 2009 國中組初賽
+
+相關資訊：[NPSC 2008](https://contest.cc.ntu.edu.tw/npsc2008/)
+
+## Unit7.5：Project7 介紹
 
 Project7 要完成一些 LIOJ 上比較有趣的題目，題目可以跳著做，碰到卡關的就先寫下一題：
 
