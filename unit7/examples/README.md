@@ -3,7 +3,7 @@
 ## JavaScript
 
 1. [Unit7.3：實戰：NPSC 2019 國中組初賽](npsc2019.js)
-2. [Unit7.4：實戰：NPSC 2009 國中組初賽](npsc2009.js)
+2. [Unit7.4：實戰：NPSC 2008 國中組初賽](npsc2008.js)
 
 ## Project7
 

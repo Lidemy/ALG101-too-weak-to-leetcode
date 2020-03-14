@@ -27,7 +27,7 @@ cat pa.in | node code.js | diff pa.out -
 
 相關資訊：[NPSC 2019](https://contest.cc.ntu.edu.tw/npsc2019/)
 
-## Unit7.4：實戰：NPSC 2009 國中組初賽
+## Unit7.4：實戰：NPSC 2008 國中組初賽
 
 相關資訊：[NPSC 2008](https://contest.cc.ntu.edu.tw/npsc2008/)
 
