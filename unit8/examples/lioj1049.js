@@ -17,25 +17,16 @@ rl.on('close', function() {
 
 // 上面都不用管，只需要完成這個 function 就好，可以透過 lines[i] 拿取內容
 function solve(lines) {
-  let [n, m] = lines[0].split(' ')
-  let arr = []
-  for(let i=0; i<n; i++) {
-    arr[i] = Number(lines[i+1])
-  }
-
-  n = Number(n)
-
-  for(let i=n+1; i<lines.length; i++) {
-    let q = Number(lines[i])
-    console.log(search(arr, q))
-  }
-}
-
-function search(arr, q) {
-  for(let i=0; i<arr.length; i++) {
-    if (arr[i] === q) {
-      return i
+  let x = lines[1].split(' ').map(Number)
+  let y = lines[2].split(' ').map(Number)
+  let min = Infinity
+  for(let i=0; i<x.length; i++) {
+    for(let j=0; j<y.length; j++) {
+      let d = Math.abs(x[i] - y[j])
+      if (d < min) {
+        min = d
+      }
     }
   }
-  return -1
+  console.log(min)
 }

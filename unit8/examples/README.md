@@ -12,18 +12,17 @@
 
 題目連結：[LIOJ 1049：陣列最短距離](https://oj.lidemy.com/problem/1049)
 
+參考答案：[LIOJ 1049](lioj1049.js)
+
 ### 2. LIOJ 1050：two sum
 
 題目連結：[LIOJ 1050：two sum](https://oj.lidemy.com/problem/1050)
+
+參考答案：[LIOJ 1050](lioj1050.js)
+
 
 ### 3. LIOJ 1051：逆序數對
 
 題目連結：[LIOJ 1051：逆序數對](https://oj.lidemy.com/problem/1051)
 
-### 4. LIOJ 1052：貪婪的小偷 Part2
-
-題目連結：[LIOJ 1052：貪婪的小偷 Part2](https://oj.lidemy.com/problem/1052)
-
-### 5. LIOJ 1053：走迷宮
-
-題目連結：[LIOJ 1053：走迷宮](https://oj.lidemy.com/problem/1053)
+參考答案：[LIOJ 1051](lioj1051.js)
