@@ -31,17 +31,17 @@ cat pa.in | node code.js | diff pa.out -
 
 相關資訊：[NPSC 2008](https://contest.cc.ntu.edu.tw/npsc2008/)
 
+```
+cat 20081129jun/pa.in | node code.js | diff --strip-trailing-cr 20081129jun/pa.out -
+```
+
 ## Unit7.5：Project7 介紹
 
 Project7 要完成一些 LIOJ 上比較有趣的題目，題目可以跳著做，碰到卡關的就先寫下一題：
 
 1. [LIOJ 1008：幾個水桶](https://oj.lidemy.com/problem/1008)
 2. [LIOJ 1009：Yo！倒著唸！](https://oj.lidemy.com/problem/1009)
-3. [LIOJ 1011：183 Club](https://oj.lidemy.com/problem/1011)
-4. [LIOJ 1012：買一送一](https://oj.lidemy.com/problem/1012)
-5. [LIOJ 1013：搭電梯](https://oj.lidemy.com/problem/1013)
-6. [LIOJ 1014：不九人世](https://oj.lidemy.com/problem/1014)
-7. [LIOJ 1016：不合群的人](https://oj.lidemy.com/problem/1016)
-8. [LIOJ 1017：貪婪的小偷](https://oj.lidemy.com/problem/1017)
-9. [LIOJ 1018：大平台](https://oj.lidemy.com/problem/1018)
-10. [LIOJ 1019：一條路走到黑](https://oj.lidemy.com/problem/1019)
+3. [LIOJ 1013：搭電梯](https://oj.lidemy.com/problem/1013)
+4. [LIOJ 1014：不九人世](https://oj.lidemy.com/problem/1014)
+5. [LIOJ 1016：不合群的人](https://oj.lidemy.com/problem/1016)
+

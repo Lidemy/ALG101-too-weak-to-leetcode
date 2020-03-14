@@ -19,5 +19,4 @@ Project8 要完成一些 LIOJ 上的題目：
 1. [LIOJ 1049：陣列最短距離](https://oj.lidemy.com/problem/1049)
 2. [LIOJ 1050：two sum](https://oj.lidemy.com/problem/1050)
 3. [LIOJ 1051：逆序數對](https://oj.lidemy.com/problem/1051)
-4. [LIOJ 1052：貪婪的小偷 Part2](https://oj.lidemy.com/problem/1052)
-5. [LIOJ 1053：走迷宮](https://oj.lidemy.com/problem/1053)
+

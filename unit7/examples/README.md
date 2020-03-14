@@ -19,50 +19,20 @@
 
 參考解答：[LIOJ 1009](lioj1009.js)
 
-### 3. LIOJ 1011：183 Club
-
-題目連結：[LIOJ 1011：183 Club](https://oj.lidemy.com/problem/1011)
-
-參考解答：[LIOJ 1011](lioj1011.js)
-
-### 4. LIOJ 1012：買一送一
-
-題目連結：[LIOJ 1012：買一送一](https://oj.lidemy.com/problem/1012)
-
-參考解答：[LIOJ 1012](lioj1012.js)
-
-### 5. LIOJ 1013：搭電梯
+### 3. LIOJ 1013：搭電梯
 
 題目連結：[LIOJ 1013：搭電梯](https://oj.lidemy.com/problem/1013)
 
 參考解答：[LIOJ 1013](lioj1013.js)
 
-### 6. LIOJ 1014：不九人世
+### 4. LIOJ 1014：不九人世
 
 題目連結：[LIOJ 1014：不九人世](https://oj.lidemy.com/problem/1014)
 
 參考解答：[LIOJ 1014](lioj1014.js)
 
-### 7. LIOJ 1016：不合群的人
+### 5. LIOJ 1016：不合群的人
 
 題目連結：[LIOJ 1016：不合群的人](https://oj.lidemy.com/problem/1016)
 
 參考解答：[LIOJ 1016](lioj1016.js)
-
-### 8. LIOJ 1017：貪婪的小偷
-
-題目連結：[LIOJ 1017：貪婪的小偷](https://oj.lidemy.com/problem/1017)
-
-參考解答：[LIOJ 1017](lioj1017.js)
-
-### 9. LIOJ 1018：大平台
-
-題目連結：[LIOJ 1018：大平台](https://oj.lidemy.com/problem/1018)
-
-參考解答：[LIOJ 1018](lioj1018.js)
-
-### 10. LIOJ 1019：一條路走到黑
-
-題目連結：[LIOJ 1019：一條路走到黑](https://oj.lidemy.com/problem/1019)
-
-參考解答：[LIOJ 1019](lioj1019.js)
