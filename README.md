@@ -1,13 +1,15 @@
 # [ALG101] 先別急著寫 leetcode
 
 這個 repo 會放與課程相關的資源，包含大綱、作業以及參考解答程式碼  
-完整課程可以在這邊找到：（待補）
+完整課程可以在這邊找到：[Lidemy - [ALG101] 先別急著寫 leetcode](https://lidemy.com/p/alg101-leetcode)
 
 課程相關資源：
 
 1. 課程大綱（請見下方）
 2. 範例程式碼及作業參考解答（下方大綱點進去後，再點進 examples 資料夾即可）
-3. [課程簡報](https://lidemy.github.io/ALG101-too-weak-to-leetcode/public/) （尚未完成）
+3. [課程簡報](https://lidemy.github.io/ALG101-too-weak-to-leetcode/public/) 
+
+附註：課程簡報有一個已知問題，那就是當你跳到簡報某一頁然後重新整理時，會顯示 404 Not found。目前暫時的解決方法是把網址列的簡報頁數刪掉，只留下 unitX 當作結尾就會正常。
 
 底下是個單元名稱以及大綱連結：
 
@@ -25,6 +27,14 @@
 在課程中會有大量的實作練習，都會附上要練習的題目，強烈建議在觀看參考解答影片之前自己先把題目想過一遍並且試著做做看，才能得到比較好的效果。
 
 ## Changelog
+
+### 2020-03-22
+
+正式對外公開課程
+
+### 2020-03-17
+
+課程簡報以及內容皆準備完成，soft launch
 
 ### 2020-03-14
 1. Unit7 完成
@@ -52,7 +62,8 @@
 
 ### 2020-02-26
 
-參考 [https://github.com/pengx17/slides](https://github.com/pengx17/slides) 把簡報放到 repo 並且透過 GitHub Pages 發布
+參考 [https://github.com/pengx17/slides](https://github.com/pengx17/slides)  
+把簡報放到 repo 並且透過 GitHub Pages 發布
 
 ### 2020-01-21
 完成初版大綱
