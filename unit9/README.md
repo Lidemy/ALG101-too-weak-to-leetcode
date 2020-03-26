@@ -19,3 +19,15 @@
 
 麻煩抽空幫我寫個[課程心得](https://forms.gle/GNFGJeGoe4onMcxd8)
 
+也可以把 LIOJ 上面課程沒出現過的題目寫完，其中特別推薦的是：
+
+1. [LIOJ1003 - 聯誼門票搶起來](https://oj.lidemy.com/problem/1003)
+2. [LIOJ1004 - 聯誼順序比大小](https://oj.lidemy.com/problem/1004)
+3. [LIOJ1005 - 聯誼話題相親數](https://oj.lidemy.com/problem/1005)
+4. [LIOJ1006 - 聯誼坐法排排看](https://oj.lidemy.com/problem/1006)
+5. [LIOJ1007 - 聯誼排行大比拼](https://oj.lidemy.com/problem/1007)
+6. [LIOJ1018 - 大平台](https://oj.lidemy.com/problem/1018)
+7. [LIOJ1019 - 一條路走到黑](https://oj.lidemy.com/problem/1019)
+8. [LIOJ1052 - 貪婪的小偷 Part2](https://oj.lidemy.com/problem/1052)
+9. [LIOJ1053 - 走迷宮](https://oj.lidemy.com/problem/1053)
+
