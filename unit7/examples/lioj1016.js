@@ -25,7 +25,10 @@ function solve(lines) {
     }
   }
   let bCount = n - aCount
-  if (aCount === bCount) {
+  
+  // Update: 原本影片示範的程式碼沒有考慮到全部都是 A 或者全部都是 B 的情況
+  // 需要補上判斷才能 AC 
+  if (aCount === bCount || aCount === 0 || bCount === 0) {
     console.log('PEACE')
   } else {
     let whoLose = aCount < bCount ? 'A' : 'B'
