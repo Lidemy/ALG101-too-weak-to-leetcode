@@ -23,8 +23,10 @@ function solve(lines) {
   }
 
   let max = -Infinity
-  let currentSum = arr[0]
-  for(let i=1; i<arr.length; i++) {
+  // 更新：影片中這邊初始值為 arr[0]，應該要改成 0
+  let currentSum = 0
+  // 更新：影片中這邊 i=1，應該要改成 i=0
+  for(let i=0; i<arr.length; i++) {
     if (arr[i] + currentSum > arr[i]) {
       currentSum += arr[i]
     } else {

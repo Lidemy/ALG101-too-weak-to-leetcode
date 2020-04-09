@@ -24,7 +24,8 @@ function solve(lines) {
 
   let max = -Infinity
   for(let i=0; i<arr.length; i++) {
-    for(let j=i+1; j<arr.length; j++) {
+    // 更新：在教學影片中這邊為 j=i+1，應該要改成 j=i，否則會漏掉單一元素子序列的情況
+    for(let j=i; j<arr.length; j++) {
       let sum = 0
       for(let k=i; k<=j; k++) {
         sum += arr[k]
