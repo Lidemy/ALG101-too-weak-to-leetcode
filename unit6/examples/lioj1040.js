@@ -27,7 +27,7 @@ function solve(lines) {
 
 // 方法1
 function join(arr, separator) {
-  let result = arr[0]
+  let result = ''
   for(let i=0; i<arr.length; i++) {
     if (i === arr.length - 1) {
       result += arr[i]
